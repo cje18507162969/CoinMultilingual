@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--取景框-->
+    <declare-styleable name="ClipImageView">
+        <attr name="civHeight" format="integer" />
+        <attr name="civWidth" format="integer" />
+        <attr name="civTipText" format="string" />
+        <attr name="civTipTextSize" format="dimension" />
+        <attr name="civMaskColor" format="color" />
+        <attr name="civClipPadding" format="dimension" />
+        <attr name="civClipRoundCorner" format="dimension|reference" />
+        <attr name="civClipCircle" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="waveSideBar">
+        <attr name="textColor" format="color|reference" />
+        <attr name="backgroundColor" format="color|reference" />
+        <attr name="chooseTextColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="hintTextSize" format="dimension" />
+        <attr name="tab_radius" format="dimension" />
+        <attr name="face_radius" format="dimension" />
+        <attr name="circleRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- SetItemView -->
+    <declare-styleable name="SetItemView">
+        <attr name="setText" format="string" />
+        <attr name="setSrc" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PrivacyItemView">
+        <attr name="leftTopText" format="string" />
+        <attr name="leftBottomText" format="string" />
+        <attr name="showDetailed" format="boolean" />
+        <attr name="setImageSrc" format="reference" />
+        <attr name="setItemText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsPrivacyRadioItemView">
+        <attr name="setCheckImageSrc" format="reference" />
+        <attr name="setImage" format="reference" />
+        <attr name="setTopText" format="string" />
+        <attr name="setBottomText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsPrivacyRadioView">
+        <attr name="setPublicShow" format="boolean" />
+        <attr name="setMeShow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchEditText">
+        <attr name="searchhint" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBgView">
+        <attr name="gravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+        <attr name="bg_color" format="color"/>
+    </declare-styleable>
+
+</resources>

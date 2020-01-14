@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.coin.market">
+
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <!-- App 权限-->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!--震动-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+      <!--指纹识别-->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+
+    <application
+        android:name="teng.wang.comment.base.FaceApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        tools:replace="icon,label,theme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="Coin.Sp.Multilanguage.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_apk_paths" />
+        </provider>
+        <receiver android:name="com.coin.market.activity.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 启动界面 -->
+        <activity android:name="com.coin.market.activity.startActivity"
+            android:theme="@style/LeadingAndMainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Main-->
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+
+        <activity
+            android:name=".activity.showpicture.ShowPictureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--问题反馈 反馈列表  FeedbackActivity-->
+        <activity
+            android:name=".activity.home.feedback.FeedbackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- 问题反馈 发表反馈  PublishFeedbackActivity-->
+        <activity
+            android:name=".activity.home.feedback.PublishFeedbackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- 安全中心  设置支付密码-->
+        <activity android:name=".activity.mine.paypass.PayPassActivity"/>
+        <!-- 分享 -->
+        <activity android:name=".activity.home.share.ShareActivity"/>
+        <!-- 分享 返利规则 -->
+        <activity android:name=".activity.home.sharerule.ShareRuleActivity"/>
+        <!-- 分享 我的收益 返佣记录  -->
+        <activity android:name=".activity.home.sharemore.ShareMoreActivity"/>
+        <!-- 分享 邀请榜单 -->
+        <activity android:name=".activity.home.sharerank.ShareRankActivity"/>
+
+        <!-- ///////////////////////////////////  交易所  /////////////////////////////////////////////////////// -->
+
+        <!-- 用户注册 -->
+        <activity android:name=".activity.register.ShopRegisterActivity"/>
+
+        <!--忘记密码  ForgetPasswordActivity-->
+        <activity
+            android:name=".activity.password.ForgetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- 重置密码 -->
+        <activity android:name=".activity.password.ResetPasswordActivity"/>
+
+        <!-- 首页 公告详情 列表 -->
+        <activity android:name=".activity.home.news.HomeNewsActivity"/>
+        <!-- 币-行情  k线图  H5 -->
+        <activity android:name=".activity.quotation.QuotationActivity"/>
+        <!-- 个人 充币 选择币种 -->
+        <activity android:name=".activity.mine.coinselect.CoinSelectActivity"/>
+        <!--  币种充值  显示二维码 密钥地址 -->
+        <activity android:name=".activity.mine.coinrecharge.CoinRechargeActivity"/>
+        <!--  币种充值  充值历史记录  充币 提币 历史 列表-->
+        <activity android:name=".activity.mine.coinrecord.CoinRecordActivity"/>
+        <!--  币种充值  充值历史记录 详情  充币提币列表  详情 -->
+        <activity android:name=".activity.mine.coinrecordinfo.CoinInfoActivity"/>
+        <!--  提币 -->
+        <activity android:name=".activity.mine.coinout.CoinOutActivity"/>
+        <!--  提币 地址 列表 -->
+        <activity android:name=".activity.mine.coinaddress.CoinAddressActivity"/>
+        <!--  提币 地址 添加地址 -->
+        <activity android:name=".activity.mine.coinaddressdda.CoinAddAddressActivity"/>
+        <!-- 划转 -->
+        <activity android:name=".activity.mine.transfer.TransferActivity"/>
+        <!-- 划转 历史记录 -->
+        <activity android:name=".activity.mine.transferrecord.TransferRecordActivity"/>
+        <!-- 订单管理 委托 -->
+        <activity android:name=".activity.mine.coinorder.CoinOrderActivity"/>
+        <!-- 订单 成交明细 -->
+        <activity android:name=".activity.mine.coinorderinfo.CoinOrderInfoActivity"/>
+        <!-- 首页 指南 -->
+        <activity android:name=".activity.home.guide.GuideActivity"/>
+        <!-- 首页 帮助中心-->
+        <activity android:name=".activity.home.web.HomeWebActivity"/>
+        <!-- 个人中心 身份认证 未认证 已认证-->
+        <activity android:name=".activity.mine.identity.IdentityActivity"/>
+        <!-- 个人中心 身份认证 填写输入信息 -->
+        <activity android:name=".activity.mine.identityedit.IdentityEditActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <!-- 个人中心 商家入驻 审核结果 -->
+        <activity android:name=".activity.mine.settleddata.SettledDataActivity"/>
+        <!-- 个人中心 商家入驻 填写申请资料 -->
+        <activity android:name=".activity.mine.settlededit.SettledEditActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <!-- 个人中心 商家入驻 上传身份证 -->
+        <activity android:name=".activity.mine.settledcard.SettledCardActivity"/>
+        <!-- 个人中心 身份认证 认证成功 -->
+        <activity android:name=".activity.mine.identitysuccess.IdentitySuccessActivity"/>
+        <!-- 个人中心 安全中心 -->
+        <activity android:name=".activity.mine.security.SecurityCentreActivity"/>
+        <!-- 个人中心 指纹解锁 -->
+        <activity android:name=".activity.mine.fingerprint.FingerprintActivity"/>
+        <!-- 个人中心 手势解锁 -->
+        <activity android:name=".activity.mine.gesture.GestureActivity"/>
+        <!-- 个人中心 安全中心 绑定手机 -->
+        <activity android:name=".activity.mine.bindemail.BindEmailActivity"/>
+        <!-- 个人中心 安全中心 确认绑定 -->
+        <activity android:name=".activity.mine.bindemailconfirm.BindEmailConfirmActivity"/>
+        <!-- 个人中心 安全中心 绑定谷歌验证器 -->
+        <activity android:name=".activity.mine.googleqr.GoogleQrActivity"/>
+        <!-- 个人中心 安全中心 绑定谷歌验证器 确定 -->
+        <activity android:name=".activity.mine.googleqr.GoogleQrConfirmActivity"/>
+        <!-- 个人中心 关于我们 -->
+        <activity android:name=".activity.mine.about.AboutActivity"/>
+        <!-- 个人中心 联系客服 -->
+        <activity android:name=".activity.mine.service.ServiceActivity"/>
+        <!-- 个人中心 设置 -->
+        <activity android:name=".activity.mine.settings.SettingsActivity"/>
+        <!-- 个人中心 设置 修改密码 -->
+        <activity android:name=".activity.mine.updatepassword.UpdatePasswordActivity"/>
+        <!-- 个人中心 我的广告 -->
+        <activity android:name=".activity.mine.publish.MyPublishActivity"/>
+        <!-- 交易模块 法币交易 订单详情 -->
+        <activity android:name=".activity.transaction.order.TransactionOrderInfoActivity"/>
+        <!-- 交易模块 法币交易 订单记录 -->
+        <activity android:name=".activity.transaction.orderrecord.OrderRecordActivity"/>
+        <!-- 交易模块 法币交易 收款 支付 方式 -->
+        <activity android:name=".activity.transaction.paymode.PayModeActivity"/>
+        <!-- 交易模块 法币交易 添加支付方式 -->
+        <activity android:name=".activity.transaction.addpaymode.AddPayModeActivity"/>
+        <!-- 交易模块 法币交易 保存添加支付方式 -->
+        <activity android:name=".activity.transaction.paysave.PayModeSaveActivity"/>
+        <!-- 交易模块 法币交易 发布广告 -->
+        <activity android:name=".activity.transaction.launch.LaunchPosterActivity"/>
+        <!-- 交易模块 法币交易 发布广告 我要买或卖币  发布-->
+        <activity android:name=".activity.transaction.mytransact.MyTransactActivity"/>
+
+
+        <!-- 资产模块 法币账户 币币账户 财务记录-->
+        <activity android:name=".activity.assets.records.AssetRecordsActivity"/>
+
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <!--<activity android:name="com.example.jpushdemo.TestActivity" android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="jpush.testAction" />-->
+                <!--<category android:name="jpush.testCategory" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.coin.sq.multilanguage" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":pushcore"
+            android:exported="false"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能-->
+        <provider
+            android:authorities="com.coin.sq.multilanguage.DataProvider"
+            android:name="cn.jpush.android.service.DataProvider"
+            android:process=":pushcore"
+            android:exported="false"
+            tools:replace="android:authorities"/>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.coin.sq.multilanguage" />
+            </intent-filter>
+
+        </service>
+        <!-- since 3.1.0 Required SDK 核心功能-->
+        <provider
+            tools:replace="android:authorities"
+            android:authorities="com.coin.sq.multilanguage.DownloadProvider"
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:exported="true" />
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.coin.sq.multilanguage" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+
+        <!--since 3.3.0 Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.service.JNotifyActivity"
+            android:exported="true"
+            android:taskAffinity="jpush.custom"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.JNotifyActivity" />
+                <category android:name="com.coin.sq.multilanguage" />
+            </intent-filter>
+        </activity>
+
+        <!-- Since JCore2.0.0 Required SDK核心功能-->
+        <!-- 这个Service要继承JCommonService -->
+        <service android:name=".jpush.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name=".jpush.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.coin.sq.multilanguage" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <receiver
+            android:name="com.coin.market.jpush.MyJPushMessageReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.coin.sq.multilanguage"></category>
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="82b11e74b7f5c61e661f19e1" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+
+    </application>
+
+</manifest>

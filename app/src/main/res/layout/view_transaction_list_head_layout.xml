@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/transaction_buy_btc"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/black"
+                        android:text="@string/transaction_fb_buy_one_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/number_price"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/transaction_change"/>
+
+                    <TextView
+                        android:id="@+id/number_price_text"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/app_style_blue"
+                        android:text="按价格购买"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/shape_gray_line_layout"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:padding="@dimen/dp_4"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/header_edit"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入价格"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/black"
+                        android:text="CNY"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/header_buy_button"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/transaction_buy"/>
+
+                    <TextView
+                        android:id="@+id/transaction_button_text"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16"
+                        android:text="@string/transaction_fb_buy_button_text"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:background="@color/app_default"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"/>
+
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black"
+            android:padding="@dimen/dp_12"
+            android:text="@string/transaction_fb_list_top_text"/>
+
+        <View
+            android:background="@color/app_default"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+
+    </LinearLayout>
+</layout>

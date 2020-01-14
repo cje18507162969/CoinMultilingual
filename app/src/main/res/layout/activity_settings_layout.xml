@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="@dimen/dp_12"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/security_centre_phone_button"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_settings_language"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_settings_language_select"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/color_999999"/>
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_settings_price_mode"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_settings_price_mode_select"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/color_999999"/>
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_settings_quotation"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_settings_quotation_select"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/color_999999"/>
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_settings_color"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_settings_color_select"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/color_999999"/>
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:gravity="center|left"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mine_settings_accelerate_transaction"
+                            android:textSize="@dimen/sp_12"
+                            android:textColor="@color/app_home_text" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/mine_description"/>
+                    </LinearLayout>
+
+                  <ImageView
+                      android:id="@+id/settings_accelerate_button"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/mine_switchon"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/settings_update_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_44"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/shape_blue_button_layout"
+                android:text="@string/mine_settings_update_password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_18"/>
+
+            <Button
+                android:id="@+id/settings_language_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/shape_blue_button_layout"
+                android:text="@string/forget_switch_language"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_18" />
+
+            <Button
+                android:id="@+id/settings_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_50"
+                android:background="@drawable/shape_blue_button_layout"
+                android:text="@string/mine_settings_back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_18" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mine_order_info_time"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/item_coin_info_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mine_order_info_final_price"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/item_coin_info_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coin_info_money_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mine_order_info_final_value"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/item_coin_info_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_15" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mine_order_info_sercice_money_bottom"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/item_coin_info_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点卡消耗"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/coin_info_dk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_color" />
+
+
+</LinearLayout>

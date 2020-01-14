@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.coin.sp.multilanguage"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 12
+        versionName "1.0.1"
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        dexOptions {
+            javaMaxHeapSize "8g"
+            jumboMode true
+        }
+        packagingOptions {
+            exclude "lib/arm64-v8a/librealm-jni.so"
+            exclude "lib/mips/librealm-jni.so"
+            exclude "lib/x86/librealm-jni.so"
+            exclude "lib/x86_64/librealm-jni.so"
+        }
+        splits {
+            abi {
+                enable true
+                reset()
+                //include 'armeabi', 'armeabi-v7a'
+                //include 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            }
+        }
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters 'armeabi', 'armeabi-v7a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "82b11e74b7f5c61e661f19e1", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
+
+    productFlavors {
+
+        myapp{}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders.put("myapp", name)
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def newName
+                newName = "app_coinmilti${defaultConfig.versionName}.apk"
+                output.outputFileName = newName
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    //    解决打包时 compileSdkVersion 版本不统一的冲突
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    androidTestImplementation('com.android.support:support-annotations:27.1.1') {
+        force = true
+    }
+    implementation 'net.opacapp:multiline-collapsingtoolbar:27.1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':comment')
+    implementation files('libs/alipaySdk-20180601.jar')
+
+    implementation 'org.linwg1988:lcardview:1.4.2'
+    // 视频播放
+    implementation 'com.shuyu:GSYVideoPlayer:2.1.1'
+    //水波纹
+    implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-alpha-1'
+
+    implementation 'cn.jiguang.sdk:jpush:3.3.6'  // 此处以JPush 3.3.6 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:2.1.6'  // 此处以JCore 2.1.6 版本为例。
+
+    implementation 'com.contrarywind:Android-PickerView:4.1.8'
+
+
+    // 下拉刷新
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-5'
+
+    //阿里云上传
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+}

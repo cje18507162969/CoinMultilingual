@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/titleBar"
+                    layout="@layout/base_head_layout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/transaction_fb_order_launch_poster_title_text"
+                    android:textColor="@color/app_home_text"
+                    android:textSize="@dimen/sp_18" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:id="@+id/launch_poster_buy_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction_fb_order_launch_poster_buy_text"
+                        android:textColor="@color/app_style_blue"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/launch_poster_sell_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_26"
+                        android:text="@string/transaction_fb_order_launch_poster_sell_text"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/launch_poster_next_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="@dimen/dp_12"
+                        android:background="@drawable/shape_blue_button_layout"
+                        android:text="@string/transaction_fb_order_launch_poster_next_button_text"
+                        android:textColor="@color/white" />
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/launch_poster_next_button">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_12">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/dp_12"
+                                android:paddingBottom="@dimen/dp_12">
+
+                                <LinearLayout
+                                    android:id="@+id/launch_poster_coin_select"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_gray_button_layout"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/dp_6">
+
+                                    <TextView
+                                        android:id="@+id/launch_poster_coin_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="请选择币种"
+                                        android:textColor="@color/app_home_text" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/transaction_fb_coin_class_text" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/mine_arrow" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/launch_poster_available"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_2"
+                                    android:layout_marginBottom="@dimen/dp_14"
+                                    android:text="可用0.00 USDT"
+                                    android:textColor="@color/color_999999"
+                                    android:textSize="@dimen/sp_10" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_gray_button_layout"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/dp_6">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/cny_text"
+                                        android:textColor="@color/app_home_text" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/transaction_fb_unit_text" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/mine_arrow"
+                                        android:visibility="invisible" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:gravity="center|left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_20"
+                                    android:text="价格"
+                                    android:textColor="@color/app_home_text"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/launch_poster_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="请输入交易价格"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@color/app_home_text"
+                                        android:textSize="@dimen/sp_14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/cny_text"
+                                        android:textColor="@color/color_999999"
+                                        android:textSize="@dimen/sp_12" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_1"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:background="@color/app_default" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:gravity="center|left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_20"
+                                    android:text="交易数量"
+                                    android:textColor="@color/app_home_text"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/launch_poster_numb"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="请输入交易数量"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@color/app_home_text"
+                                        android:textSize="@dimen/sp_14" />
+
+                                    <TextView
+                                        android:id="@+id/launch_poster_numb_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/color_999999"
+                                        android:textSize="@dimen/sp_12" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_1"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:background="@color/app_default" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:gravity="center|left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_20"
+                                    android:text="单笔最小成交金额"
+                                    android:textColor="@color/app_home_text"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/launch_poster_min_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="请输入交易价格"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@color/app_home_text"
+                                        android:textSize="@dimen/sp_14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/cny_text"
+                                        android:textColor="@color/color_999999"
+                                        android:textSize="@dimen/sp_12" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_1"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:background="@color/app_default" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:gravity="center|left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_20"
+                                    android:text="单笔最大成交金额"
+                                    android:textColor="@color/app_home_text"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/launch_poster_max_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="请输入交易价格"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@color/app_home_text"
+                                        android:textSize="@dimen/sp_14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/cny_text"
+                                        android:textColor="@color/color_999999"
+                                        android:textSize="@dimen/sp_12" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_1"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:background="@color/app_default" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/coins_fr_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

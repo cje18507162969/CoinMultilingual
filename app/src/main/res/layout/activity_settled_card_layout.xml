@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:text="@string/mine_settled_edit_title"
+                android:textColor="@color/app_home_text"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="身份证明"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_above="@+id/settled_card_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/dp_20"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/settled_card_img1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_18"
+                        android:layout_width="@dimen/dp_280"
+                        android:layout_height="@dimen/dp_160"
+                        android:src="@drawable/mine_verified_iccardfront"/>
+
+                    <ImageView
+                        android:id="@+id/settled_card_img2"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_18"
+                        android:layout_width="@dimen/dp_280"
+                        android:layout_height="@dimen/dp_160"
+                        android:src="@drawable/mine_verified_iccardback"/>
+
+                    <ImageView
+                        android:id="@+id/settled_card_img3"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_18"
+                        android:layout_width="@dimen/dp_280"
+                        android:layout_height="@dimen/dp_160"
+                        android:src="@drawable/hand_heldphoto"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/settled_card_bottom_layout"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/select_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/transaction_inactivated"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_10"
+                        android:text="同意冻结30000USDT作为广告方保证金，且同意"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_style_blue"
+                        android:textSize="@dimen/sp_10"
+                        android:text="《广告发布方协议》"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/settled_card_next_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_margin="@dimen/dp_12"
+                    android:background="@drawable/shape_blue_button_layout"
+                    android:text="@string/mine_identity_next_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_18"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

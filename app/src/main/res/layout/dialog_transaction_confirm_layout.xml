@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_transaction_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_38"
+    android:paddingRight="@dimen/dp_38"
+    android:background="@drawable/shape_round_white_bg"
+    android:padding="@dimen/dp_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_transaction_confirm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:textColor="@color/app_home_text"
+        android:text="@string/transaction_fb_dialog_transaction_confirm_in"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_transaction_confirm_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_home_text"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/transaction_fb_dialog_transaction_confirm_in_text1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center|left"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/dialog_transaction_img"
+           android:layout_marginRight="@dimen/dp_10"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/transaction_inactivated"/>
+        <TextView
+            android:id="@+id/dialog_transaction_confirm_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_style_blue"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/transaction_fb_dialog_transaction_confirm_in_text2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dialog_transaction_cancel_button"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/app_home_text"
+            android:text="@string/transaction_fb_dialog_transaction_cancel"/>
+
+        <TextView
+            android:id="@+id/dialog_transaction_confirm_button"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/app_style_blue"
+            android:text="@string/transaction_fb_dialog_transaction_confirm"/>
+
+    </LinearLayout>
+
+</LinearLayout>

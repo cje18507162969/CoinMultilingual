@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/coin_address_button"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/titleBar"
+                layout="@layout/base_head_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/mine_coin_address_eth_add"
+                    android:textColor="@color/app_home_text"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/sp_12"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/app_home_text"
+                    android:text="@string/mine_coin_out_address"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/add_address_edit1"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:background="@null"
+                        android:hint="@string/mine_coin_address_eth_add_edit_hide"
+                        android:textColor="@color/app_home_text"/>
+
+                    <ImageView
+                        android:id="@+id/coin_out_qr"
+                        android:padding="@dimen/dp_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_scan"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:background="@color/line_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/sp_12"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/app_home_text"
+                    android:text="@string/mine_coin_address_eth_text_remarks"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/add_address_edit2"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:background="@null"
+                        android:hint="@string/mine_coin_address_eth_add_edit_hide_remarks"
+                        android:textColor="@color/app_home_text"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:background="@color/line_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/coin_address_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_17"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:background="@drawable/shape_blue_button_layout" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <teng.wang.comment.utils.deleting.SwipeLayout
+            android:id="@+id/swipelayout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+            <include
+                layout="@layout/item_shop_catr_content_layout"/>
+            <include
+                layout="@layout/layout_delete"/>
+
+
+        </teng.wang.comment.utils.deleting.SwipeLayout>
+    </LinearLayout>
+</layout>

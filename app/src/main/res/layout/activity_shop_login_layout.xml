@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/login_img"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_60"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textStyle="bold"
+                    android:textColor="@color/app_style_blue_dark_text"
+                    android:textSize="@dimen/sp_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_40"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/login_user" />
+
+                            <EditText
+                                android:id="@+id/mEdt_phone_number"
+                                android:layout_width="@dimen/dp_0"
+                                android:layout_height="@dimen/dp_56"
+                                android:layout_marginLeft="@dimen/dp_6"
+                                android:layout_weight="1"
+                                android:background="@color/transparent"
+                                android:hint="@string/mine_security_edit_phone_hide"
+                                android:inputType="phone|number"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/color_999999"
+                                android:textSize="@dimen/sp_16" />
+
+                            <ImageView
+                                android:id="@+id/mImg_Delete_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/mEdt_phone_number"
+                                android:layout_alignEnd="@+id/mEdt_phone_number"
+                                android:src="@mipmap/login_close" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:background="@color/line_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/login_password" />
+
+                            <EditText
+                                android:id="@+id/mEdt_Password"
+                                android:layout_width="@dimen/dp_0"
+                                android:layout_height="@dimen/dp_56"
+                                android:layout_marginLeft="@dimen/dp_6"
+                                android:layout_weight="1"
+                                android:background="@color/transparent"
+                                android:hint="@string/mine_input_pwd"
+                                android:inputType="textPassword"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/color_999999"
+                                android:textSize="@dimen/sp_16" />
+
+                            <ImageView
+                                android:id="@+id/mImg_Display_cipher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/mEdt_phone_number"
+                                android:layout_alignEnd="@+id/mEdt_phone_number"
+                                android:src="@mipmap/mine_pass" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:background="@color/line_color" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15">
+
+                        <TextView
+                            android:id="@+id/mTv_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="@string/mine_forget_password"
+                            android:textColor="@color/app_style_blue_text"
+                            android:textSize="@dimen/sp_14" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/mBtn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:alpha="0.5"
+                    android:background="@drawable/shape_blue_button_layout"
+                    android:text="@string/register_text_user_login"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/mTv_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:background="@drawable/shape_blue_line_button_layout"
+                    android:text="@string/register_tv"
+                    android:textColor="@color/app_style_blue_text"/>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include
+                android:id="@+id/titleBar"
+                layout="@layout/base_bottom_layout" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

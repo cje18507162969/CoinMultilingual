@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_top_round_layout"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lLayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/money_exchange_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    <View
+        android:background="@color/app_default"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/txt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dp_14" />
+
+</LinearLayout>

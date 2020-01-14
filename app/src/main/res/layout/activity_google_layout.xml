@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/bind_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:text="@string/mine_bind_google_qr_title_text"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_12">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_bind_google_qr_content_text"
+                        android:textColor="@color/app_home_text"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:id="@+id/iv_google_qr_code"
+                        android:layout_width="@dimen/dp_133"
+                        android:layout_height="@dimen/dp_133"
+                        android:layout_marginTop="@dimen/dp_20"/>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dp_34"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/google_secret_key"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/app_home_text"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/sp_12"
+                            android:text="@string/Loading"/>
+
+                        <TextView
+                            android:id="@+id/google_qr_copy"
+                            android:padding="@dimen/dp_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/app_style_blue"
+                            android:text="@string/copy_text"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bind_phone_edit_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_blue_button_layout"
+                android:text="@string/mine_bind_phone_next_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_18"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

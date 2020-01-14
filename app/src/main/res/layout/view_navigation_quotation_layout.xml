@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_quotation_title_bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:text=""/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/quotation_navigation_tab_layout"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/app_quotation_title_bg"
+            app:tabIndicatorColor="@color/app_style_blue_text"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/app_style_blue_text"
+            app:tabTextColor="@color/color_999999" />
+        <View
+            android:background="@color/color_999999"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/quotation_navigation_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

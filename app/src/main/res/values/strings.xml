@@ -1,0 +1,290 @@
+<resources>
+    <string name="app_name">Coin Multilingual</string>
+
+    <string name="mine_phone">手机号码</string>
+
+    <string name="mbr_treaty_create">创建合约</string>
+    <string name="mbr_treaty_polebar">杠杆</string>
+    <string name="mbr_treaty_btc">BTC/USDT指数</string>
+    <string name="mbr_treaty_usdt_right">账户权益</string>
+    <string name="mbr_treaty_usdt_profit_loss">未实现盈亏(USDT)</string>
+    <string name="mbr_treaty_risk_rate">风险率</string>
+    <string name="mbr_treaty_sf_create">确定要创建合约吗?</string>
+    <string name="mbr_treaty_sf_create_success">交易成功，可前往交易记录查看详情</string>
+
+    <string name="transaction_fb_cy_list">持有记录</string>
+    <string name="transaction_fb_his_list">历史记录</string>
+    <string name="transaction_all_order">所有订单</string>
+    <string name="tv_sell_more">做多</string>
+    <string name="tv_sell_short">做空</string>
+    <string name="tv_price_dq">当前价格</string>
+    <string name="tv_profit_and_loss">盈亏</string>
+    <string name="tv_price_mr">开仓价格</string>
+    <string name="tv_price_close">平仓价格</string>
+
+    <string name="tv_setting">设置</string>
+    <string name="tv_close_position_sf">确认平仓吗?</string>
+
+    <string name="operate_success">操作成功</string>
+    <string name="know">知道了</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    //本金：
+    <string name="tv_h_money"><Data>
+    <![CDATA[<font color="#97A0AA">
+        本金：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //手续费：
+    <string name="tv_h_service_charge"><Data>
+    <![CDATA[<font color="#97A0AA">
+        手续费：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //杠杆：
+    <string name="tv_h_polebar"><Data>
+    <![CDATA[<font color="#97A0AA">
+        杠杆：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+
+    //平仓时间：
+    <string name="tv_h_time_pc"><Data>
+    <![CDATA[<font color="#97A0AA">
+        平仓时间：</font><font color="#1E3E59">
+        %1$s</font>]]>
+    </Data></string>
+
+
+
+    <string name="mbr_treaty_polebar_money">杠杆金额 %1$s</string>
+    <string name="mbr_treaty_service_charge">手续费 %1$s</string>
+    <string name="mbr_treaty_order_money">订单金额 %1$s</string>
+    <string name="mbr_treaty_create_gain">止盈（盈利%1$s）</string>
+    <string name="mbr_treaty_create_zk">止损（亏损%1$s）</string>
+
+
+    <string name="tv_set_advance">可提前设置止盈止损</string>
+
+
+    <string name="main_radio_group_home">首页</string>
+    <string name="main_radio_group_quotation">行情</string>
+    <string name="main_radio_group_transaction">交易</string>
+    <string name="main_radio_group_treaty">合约</string>
+    <string name="main_radio_group_order">订单</string>
+    <string name="main_radio_group_assets">资产</string>
+
+
+    <string name="button_text_buy">做多</string>
+    <string name="button_text_sell">做空</string>
+    <string name="transaction_text_fixed_price">本金(USDT)</string>
+    <string name="transaction_edit_number">数量</string>
+    <string name="transaction_edit_price">价格</string>
+    <string name="tv_no_risk">无风险</string>
+    <string name="tv_time">时间</string>
+    <string name="tv_direction">方向</string>
+
+    <string name="transaction_text_entrust">最新成交</string>
+
+    <string name="assets_button_text_cb">充币</string>
+    <string name="assets_button_text_tb">提币</string>
+    <string name="assets_button_text_all_assets">总账户资产折合(USDT)</string>
+
+    <string name="transaction_fb_transact_assets_account_available_text">可用</string>
+    <string name="transaction_fb_transact_assets_account_frozen_text">冻结</string>
+    <string name="transaction_fb_transact_assets_account_convert_text">折合(CNY)</string>
+    <string name="assets_recirds_title_text">财务记录</string>
+
+    <string name="Loading">正在加载...</string>
+    <string name="assets_recirds_item_type_text">状态</string>
+    <string name="tv_assetrecord_completed">已完成</string>
+    <string name="tv_assetrecord_all">全部</string>
+    <string name="tv_assetrecord_recharge">充值</string>
+    <string name="tv_assetrecord_openaposition">开仓</string>
+    <string name="tv_close_position">平仓</string>
+    <string name="tv_assetrecord_withdraw">提现</string>
+
+
+    <string name="toast_authentication">请实名认证后再操作</string>
+    <string name="toast_no_permission">当前用户无创建合约权限</string>
+    <string name="toast_recharge">资产不足,请充值</string>
+
+    <string name="toast_tb_address_null">提币地址不能为空</string>
+    <string name="toast_tb_num_input">请输入提币数量</string>
+    <string name="tv_code_input">请输入验证码</string>
+    <string name="dialog_tb_ok">确认提币</string>
+    <string name="mine_security_verification_title_text">安全验证</string>
+    <string name="tv_send">发送</string>
+    <string name="tv_resend">重发</string>
+
+
+    <string name="home_realnameauthentication">实名认证</string>
+    <string name="home_feedback">问题反馈</string>
+    <string name="home_real_time_market">实时行情</string>
+
+    <string name="quotation_button_name">名称</string>
+    <string name="quotation_button_new_price">最新价</string>
+    <string name="quotation_button_billboard">涨跌幅</string>
+
+    <string name="mine_coin_recharge_text_content">1.转入是自动的，USDT ERC20是基于ETH链协议，需要整个网络确认方可到账。\n2.本地址是您唯一独自使用的转入地址，您可以进行多次充币。\r\n3.禁止向本地址充除USDT ERC20以外的资产，任何其他资产充币将不可找回。\r\n4.最低充币数量</string>
+    <string name="mine_coin_out_text_content">1.提币前请务必确认地址为ETH收币地址正确无误，因地址错误导致的资产损失无法找回。\n2.最小提币数量</string>
+    <string name="mine_coin_out_address">提币地址</string>
+    <string name="mine_coin_out_money">手续费</string>
+    <string name="mine_coin_out_get_numb">到账数量</string>
+
+    <string name="assets_get_coin_address_edit_text">输入或长按粘贴地址</string>
+    <string name="assets_get_coin_service_carge_text">请输入手续费</string>
+    <string name="assets_get_coin_select_text">选择币种</string>
+    <string name="mine_coin_minnum">最小提币数量为</string>
+
+
+    <string name="mine_coin_address_add_button">添加地址</string>
+    <string name="mine_coin_out_chain_name">链名称</string>
+    <string name="mine_coin_address_eth">ETH地址</string>
+    <string name="mine_coin_address_add_eth_wallet">ETH_wallet</string>
+    <string name="mine_coin_address_eth_add">添加 ETH 地址</string>
+    <string name="mine_coin_address_eth_add_edit_hide">输入或粘贴ETH(ETH链)地址</string>
+    <string name="mine_coin_address_eth_add_edit_hide_remarks">输入ETH(ETH链)备注</string>
+    <string name="mine_coin_address_eth_text_remarks">备注</string>
+
+    <string name="tv_delete">删除</string>
+
+    <string name="mine_coin_recharge_save_qr">保存二维码</string>
+    <string name="mine_coin_recharge_text_address">充币地址</string>
+    <string name="mine_coin_recharge_coty_address">复制地址</string>
+
+    <string name="mine_coin_recharge_title_record">充币历史</string>
+    <string name="mine_coin_outhis">提币历史</string>
+
+    <string name="mine_ordinary_withdrawal">普通提币</string>
+    <string name="mine_pending">待处理</string>
+    <string name="mine_processed">已处理</string>
+    <string name="mine_revoked">已撤销</string>
+    <string name="mine_ordinary_deposit">普通充币</string>
+    <string name="mine_completed">已完成</string>
+
+
+    <string name="mine_identity_verify_title">身份认证</string>
+    <string name="mine_identity_verified">已认证</string>
+    <string name="mine_identity_go_verify_text">未认证</string>
+    <string name="mine_identity_mobile">账号</string>
+    <string name="mine_identity_num">证件号码</string>
+    <string name="mine_identity_edit_name">姓名</string>
+    <string name="mine_identity_edit_cod">身份证号</string>
+    <string name="mine_identity_edit_name_hide">请输入姓名</string>
+    <string name="mine_identity_edit_card_hide">请输入身份证号</string>
+
+    <string name="tv_illegalname">姓名不合法</string>
+    <string name="tv_idcard_invalid">输入的身份证号码无效</string>
+
+    <string name="mine_identity_country_text">国家地区</string>
+    <string name="mine_identity_china_text">中国</string>
+    <string name="tv_jp">日本</string>
+    <string name="tv_ko">韩国</string>
+    <string name="tv_en">英国</string>
+
+
+    <string name="tv_please_describe">请描述你的问题以便我们提供更好的帮助</string>
+    <string name="tv_please_seltype">请选择问题类型</string>
+    <string name="tv_advisory">咨询</string>
+    <string name="tv_suggest">建议</string>
+    <string name="tv_other">其他</string>
+    <string name="tv_submit">提交</string>
+    <string name="tv_question">提问</string>
+    <string name="tv_answer">回答: </string>
+
+
+    <string name="tv_nobelower">不得低于当前已亏损比例</string>
+    <string name="quotation_text_heigh">高</string>
+    <string name="quotation_text_low">低</string>
+    <string name="quotation_text_amount">24H</string>
+    <string name="mine_button_text_security">安全中心</string>
+    <string name="mine_button_text_about">关于我们</string>
+    <string name="mine_about_hide_text">隐私政策</string>
+    <string name="mine_about_version_code_text">版本</string>
+
+    <string name="mine_security_centre_more">其他设置</string>
+    <string name="mine_payment_password">支付密码</string>
+    <string name="mine_security_pay">设置支付密码</string>
+    <string name="mine_set_up_payment_password">请输入支付密码</string>
+    <string name="mine_set_up_payment_password_again">请再次输入支付密码</string>
+    <string name="mine_passwords_are_inconsistent_twice">两次密码不一致</string>
+
+    <string name="timer_button_text">获取</string>
+
+    <string name="forget_pass_former_edit_pass">请输入旧密码</string>
+    <string name="forget_pass_edit_pass">请输入新密码</string>
+    <string name="forget_pass_edit_pass_confirm">请确认新密码</string>
+    <string name="forget_two_new_passwords_entered_inconsistently">两次新密码输入不一致</string>
+
+    <string name="mine_settings_back">退出</string>
+    <string name="mine_settings_update_password">修改密码</string>
+    <string name="forget_switch_language">切换语言</string>
+
+    <string name="mine_log_out">您确定要退出登录吗</string>
+
+    <string name="register_edit_verify">短信验证码</string>
+    <string name="register_edit_pass">登录密码</string>
+    <string name="register_edit_pass_confirm">确认登录密码</string>
+    <string name="register_edit_invitation_code">邀请码</string>
+    <string name="register_text_user">已有账号？</string>
+    <string name="register_text_user_login">登录</string>
+    <string name="register_tv">注册</string>
+    <string name="mine_security_edit_phone_hide">请输入手机号</string>
+    <string name="mine_input_pwd">请输入密码</string>
+    <string name="mine_input_pwd_confir">请输入确认密码</string>
+    <string name="mine_forget_password">忘记密码</string>
+
+
+    <string name="forget_pass_edit_phone">您的手机号码</string>
+    <string name="forget_pass_edit_email">您的邮箱</string>
+
+    <string name="forget_pass_reset_pass">重置密码</string>
+
+
+    <string name="copy_text">复制</string>
+    <string name="save_text">保存</string>
+    <string name="confirm_text">确定</string>
+
+    <string name="forget_retrieve_password">找回密码</string>
+    <string name="forget_my_invitation_link">我的邀请链接</string>
+    <string name="forget_my_invitation_code">我的邀请码</string>
+    <string name="forget_invitation_poster">生成邀请海报</string>
+    <string name="forget_facetoface">面对面邀请</string>
+    <string name="forget_my_income">我的收益</string>
+    <string name="forget_invitation_num">邀请人数</string>
+    <string name="forget_invitation_record">邀请记录</string>
+    <string name="forget_Invitee_account">被邀请人账号</string>
+    <string name="forget_rebate_record">返佣记录</string>
+    <string name="forget_rebate_commission">折合返佣(USDT)</string>
+    <string name="forget_save_pic">保存图片</string>
+    <string name="forget_ycopy">已复制  </string>
+    <string name="forget_save_pic_failed">保存图片失败</string>
+    <string name="forget_save_pic_success">保存图片成功</string>
+
+    <string name="forget_language_q">你要切换语言吗</string>
+    <string name="forget_ch">中文</string>
+    <string name="forget_en">英文</string>
+    <string name="forget_ko">韩文</string>
+    <string name="forget_ja">日文</string>
+
+    <string name="forget_update_ts">更新提示</string>
+    <string name="forget_flg_ts">强制更新</string>
+
+    <string name="share_welcome_reg">欢迎注册Coin Square</string>
+    <string name="share_welcome_join">邀请你加入Coin Square交易所，长按识别</string>
+
+
+    <string name="mine_coin_info_text_class">类型</string>
+    <string name="mine_coin_info_text_type">状态</string>
+    <string name="mine_coin_info_text_address">地址</string>
+    <string name="mine_coin_info_text_txid">TxID</string>
+
+
+
+
+
+</resources>

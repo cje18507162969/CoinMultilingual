@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_default"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:scrollbars="none"
+                android:background="@drawable/shape_home_button_white_layout"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/dp_120"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_6"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#323232"
+                        android:textSize="@dimen/sp_14"
+                        android:text="返佣规则："/>
+
+                    <TextView
+                        android:id="@+id/share_rule"
+                        android:layout_marginTop="@dimen/dp_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#323232"
+                        android:textSize="@dimen/sp_14"
+                        android:text="@string/Loading"/>
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/share_rule"-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="1.好友接受邀请后，每产生一笔真实交易手续费，会产生相应比例的返佣。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="2.返佣的形式以MBR的形式返佣到您的交易账户，MBR返佣比例为 20% 。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="3.被邀请人交易时，邀请人实际获得的佣金将以等额的MBR进行计算后返给邀请人。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="4.好友交易返佣当日统计，次日晚到账；返佣额（MBR） = 实际产生交易量 * 手续费比例*返佣比例。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="5.邀请人享受好友交易返佣有效时长以被邀请人实际注册的时间开始进行计算，到达有效时长（90天）后您将不享受该邀请人交易产生手续费的返佣。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="6.平台将以被邀请人交易产生佣金时取一次市价进行相应币种的GAVC实时换算，返佣金额以实际返佣金额为准。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="7.开启榜单排行活动请以具体相关公告时间为准，榜单统计数据为活动开启到结束的数据。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="8.每日统计结算时间为：0 : 00，打款时间为次日晚十点前。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="9.充提币手续费，杠杆利息不参与手续费返佣。"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="@dimen/dp_18"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#323232"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:text="活动如有调整，以MBR交易所平台更新为准，最终解释权归MBR交易所平台所有。"/>-->
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <ImageView
+                android:id="@+id/bottom_img"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pr_invitefriends_bottom"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

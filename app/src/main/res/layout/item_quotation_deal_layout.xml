@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_4"
+    android:paddingLeft="@dimen/dp_10"
+    android:background="@color/app_quotation_title_bg"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_quotation_time"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            android:text="@string/isNull"/>
+
+        <TextView
+            android:id="@+id/item_quotation_direction"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_home_coin_text_color"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/isNull"/>
+
+        <TextView
+            android:id="@+id/item_quotation_price"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/isNull"/>
+
+    <TextView
+        android:id="@+id/item_quotation_numb"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:text="@string/isNull"/>
+
+
+</LinearLayout>

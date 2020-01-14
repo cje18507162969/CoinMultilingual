@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">Coin 多言語</string>
+
+    <string name="mine_phone">電話番号</string>
+
+    <string name="mbr_treaty_create">契約を作成する</string>
+    <string name="mbr_treaty_polebar">てこ</string>
+    <string name="mbr_treaty_btc">BTC/USDTインデックス</string>
+    <string name="mbr_treaty_usdt_right">アカウントエクイティ</string>
+    <string name="mbr_treaty_usdt_profit_loss">未実現損益(USDT)</string>
+    <string name="mbr_treaty_risk_rate">リスク率</string>
+    <string name="mbr_treaty_sf_create">契約を作成してもよろしいですか？</string>
+    <string name="mbr_treaty_sf_create_success">取引が成功しました。詳細については取引履歴にアクセスできます</string>
+
+    <string name="transaction_fb_cy_list">記録保持</string>
+    <string name="transaction_fb_his_list">歴史的記録</string>
+    <string name="transaction_all_order">すべての注文</string>
+    <string name="tv_sell_more">もっとする</string>
+    <string name="tv_sell_short">ショート</string>
+    <string name="tv_price_dq">現在の価格</string>
+    <string name="tv_profit_and_loss">損益</string>
+    <string name="tv_price_mr">オープン価格</string>
+    <string name="tv_price_close">終値</string>
+
+    <string name="tv_setting">設定する</string>
+    <string name="tv_close_position_sf">平倉を確認しますか?</string>
+
+    <string name="operate_success">操作が成功しました</string>
+    <string name="know">わかった</string>
+    <string name="ok">確認する</string>
+    <string name="cancel">キャンセルする</string>
+    //本金：
+    <string name="tv_h_money"><Data>
+    <![CDATA[<font color="#97A0AA">
+        校長：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //手续费：
+    <string name="tv_h_service_charge"><Data>
+    <![CDATA[<font color="#97A0AA">
+        取扱手数料：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //杠杆：
+    <string name="tv_h_polebar"><Data>
+    <![CDATA[<font color="#97A0AA">
+        てこ：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+
+    //平仓时间：
+    <string name="tv_h_time_pc"><Data>
+    <![CDATA[<font color="#97A0AA">
+        閉店時間：</font><font color="#1E3E59">
+        %1$s</font>]]>
+    </Data></string>
+
+
+
+    <string name="mbr_treaty_polebar_money">レバレッジの量 %1$s</string>
+    <string name="mbr_treaty_service_charge">取扱手数料 %1$s</string>
+    <string name="mbr_treaty_order_money">注文金額 %1$s</string>
+    <string name="mbr_treaty_create_gain">利益を得る（利益%1$s）</string>
+    <string name="mbr_treaty_create_zk">ストップロス（損失%1$s）</string>
+
+
+    <string name="tv_set_advance">利益を上げて損失を事前に設定することができます</string>
+
+    <string name="main_radio_group_home">ホーム</string>
+    <string name="main_radio_group_quotation">行情</string>
+    <string name="main_radio_group_transaction">交易</string>
+    <string name="main_radio_group_treaty">契約</string>
+    <string name="main_radio_group_order">ご注文</string>
+    <string name="main_radio_group_assets">資産</string>
+    <string name="button_text_buy">もっとする</string>
+    <string name="button_text_sell">ショート</string>
+    <string name="transaction_text_fixed_price">プリンシパル（USDT）</string>
+    <string name="transaction_edit_number">数量</string>
+    <string name="transaction_edit_price">価格</string>
+    <string name="tv_no_risk">リスクなし</string>
+    <string name="tv_time">時間</string>
+    <string name="tv_direction">方向</string>
+
+    <string name="transaction_text_entrust">最新の取引</string>
+
+
+    <!--资产-->
+    <string name="assets_button_text_cb">入金</string>
+    <string name="assets_button_text_tb">撤退</string>
+    <string name="assets_button_text_all_assets">アカウント資産合計変換(USDT)</string>
+
+    <string name="transaction_fb_transact_assets_account_available_text">利用可能</string>
+    <string name="transaction_fb_transact_assets_account_frozen_text">フリーズ</string>
+    <string name="transaction_fb_transact_assets_account_convert_text">同等（CNY）</string>
+    <string name="assets_recirds_title_text">財務記録</string>
+
+    <string name="Loading">であるために</string>
+    <string name="assets_recirds_item_type_text">ステータス</string>
+    <string name="tv_assetrecord_completed">完了しました</string>
+    <string name="tv_assetrecord_all">全部</string>
+    <string name="tv_assetrecord_recharge">充電</string>
+    <string name="tv_assetrecord_openaposition">ポジションを開く</string>
+    <string name="tv_close_position">ポジションを閉じる</string>
+    <string name="tv_assetrecord_withdraw">撤回</string>
+
+    <string name="toast_authentication">実名認証後に操作してください</string>
+    <string name="toast_no_permission">현재 사용자에게 계약을 작성할 권한이 없습니다</string>
+    <string name="toast_recharge">資産が不足しています。充電してください</string>
+
+
+    <string name="toast_tb_address_null">出金住所を空にすることはできません</string>
+    <string name="toast_tb_num_input">引き出し金額を入力してください</string>
+    <string name="tv_code_input">確認コードを入力してください</string>
+    <string name="dialog_tb_ok">出金を確認</string>
+    <string name="mine_security_verification_title_text">セキュリティ検証</string>
+    <string name="tv_send">送る</string>
+    <string name="tv_resend">再送信</string>
+
+
+    <string name="home_realnameauthentication">実名認証</string>
+    <string name="home_feedback">分権化</string>
+    <string name="home_real_time_market">リアルタイムの引用</string>
+
+    <string name="quotation_button_name">お名前</string>
+    <string name="quotation_button_new_price">最新の価格</string>
+    <string name="quotation_button_billboard">変更</string>
+
+    <string name="tv_delete">削除する</string>
+
+    <string name="mine_coin_recharge_text_content">1.転送は自動で行われますUSDT ERC20はETHチェーンプロトコルに基づいており、クレジットされる前にネットワーク全体からの確認が必要です。 \n2。このアドレスは、自分で使用する唯一の転送先アドレスであり、複数の入金を行うことができます。 \n3。USDT ERC20以外の資産をこの住所に預けることは禁じられています。 \n4。最低入金額 </string>
+    <string name="mine_coin_out_text_content">1.お金を引き出す前に、住所が正しいETH受信住所であることを確認してください間違った住所による資産の損失は回復できません。 \n2。最低引き出し額</string>
+    <string name="mine_coin_out_address">出金住所</string>
+    <string name="mine_coin_out_money">取扱手数料</string>
+    <string name="mine_coin_out_get_numb">受け取った量</string>
+
+    <string name="assets_get_coin_address_edit_text">アドレスを入力または長押し</string>
+    <string name="assets_get_coin_service_carge_text">手数料を入力してください</string>
+    <string name="assets_get_coin_select_text">通貨を選択</string>
+    <string name="mine_coin_minnum">最低引き出し額は</string>
+
+
+    <string name="mine_coin_address_add_button">住所を追加</string>
+    <string name="mine_coin_out_chain_name">链名称</string>
+    <string name="mine_coin_address_eth">ETHアドレス</string>
+    <string name="mine_coin_address_add_eth_wallet">ETH_wallet</string>
+    <string name="mine_coin_address_eth_add">ETHアドレスを追加</string>
+    <string name="mine_coin_address_eth_add_edit_hide">ETH（ETHチェーン）アドレスを入力または貼り付けます</string>
+    <string name="mine_coin_address_eth_add_edit_hide_remarks">ETH（ETHチェーン）コメントを入力してください</string>
+    <string name="mine_coin_address_eth_text_remarks">発言</string>
+
+
+
+    <string name="mine_coin_recharge_save_qr">QRコードを保存する</string>
+    <string name="mine_coin_recharge_text_address">入金先住所</string>
+    <string name="mine_coin_recharge_coty_address">住所をコピー</string>
+    <string name="mine_coin_recharge_title_record">入金履歴</string>
+    <string name="mine_coin_outhis">出金履歴</string>
+
+    <string name="mine_ordinary_withdrawal">通常の撤退</string>
+    <string name="mine_pending">保留中</string>
+    <string name="mine_processed">処理済み</string>
+    <string name="mine_revoked">取り消されました</string>
+    <string name="mine_ordinary_deposit">普通預金</string>
+    <string name="mine_completed">完了しました</string>
+
+
+    <string name="mine_identity_verify_title">身元認証</string>
+    <string name="mine_identity_verified">認定済み</string>
+    <string name="mine_identity_go_verify_text">認定されていません</string>
+    <string name="mine_identity_mobile">アカウント</string>
+    <string name="mine_identity_num">ID番号</string>
+    <string name="mine_identity_edit_name">お名前</string>
+    <string name="mine_identity_edit_cod">ID番号</string>
+    <string name="mine_identity_edit_name_hide">名前を入力してください</string>
+    <string name="mine_identity_edit_card_hide">ID番号を入力してください</string>
+
+    <string name="tv_illegalname">違法な名前</string>
+    <string name="tv_idcard_invalid">入力されたIDカード番号は無効です</string>
+
+    <string name="mine_identity_country_text">国面積</string>
+    <string name="mine_identity_china_text">中国</string>
+    <string name="tv_jp">日本</string>
+    <string name="tv_ko">韓国</string>
+    <string name="tv_en">イギリス</string>
+
+
+    <string name="tv_please_describe">問題を説明してください。</string>
+    <string name="tv_please_seltype">質問タイプを選択してください</string>
+    <string name="tv_advisory">コンサルティング</string>
+    <string name="tv_suggest">提案</string>
+    <string name="tv_other">その他</string>
+    <string name="tv_submit">提出する</string>
+    <string name="tv_question">質問</string>
+    <string name="tv_answer">解答: </string>
+
+
+    <string name="tv_nobelower">現在の損失率より低くてはいけません</string>
+    <string name="quotation_text_heigh">高い</string>
+    <string name="quotation_text_low">低い</string>
+    <string name="quotation_text_amount">24H</string>
+    <string name="mine_button_text_security">セキュリティセンター</string>
+    <string name="mine_button_text_about">私達について</string>
+    <string name="mine_about_hide_text">隐私政策</string>
+    <string name="mine_about_version_code_text">バージョン</string>
+
+    <string name="mine_security_centre_more">その他の設定</string>
+    <string name="mine_payment_password">支払いパスワード</string>
+    <string name="mine_security_pay">支払いパスワードを設定する</string>
+    <string name="mine_set_up_payment_password">支払いパスワードを入力してください</string>
+    <string name="mine_set_up_payment_password_again">支払いパスワードをもう一度入力してください</string>
+    <string name="mine_passwords_are_inconsistent_twice">パスワードが2回矛盾しています</string>
+
+    <string name="timer_button_text">ゲット</string>
+
+    <string name="forget_pass_former_edit_pass">古いパスワードを入力してください</string>
+    <string name="forget_pass_edit_pass">新しいパスワードを入力してください</string>
+    <string name="forget_pass_edit_pass_confirm">新しいパスワードを確認してください</string>
+    <string name="forget_two_new_passwords_entered_inconsistently">矛盾して入力された2つの新しいパスワード</string>
+
+    <string name="mine_settings_back">出口</string>
+    <string name="mine_settings_update_password">パスワードを変更する</string>
+    <string name="forget_switch_language">言語を切り替える</string>
+
+    <string name="mine_log_out">本当にログアウトしますか？</string>
+
+    <string name="register_edit_verify">SMS確認コード</string>
+    <string name="register_edit_pass">ログインパスワード</string>
+    <string name="register_edit_pass_confirm">ログインパスワードを確認</string>
+    <string name="register_edit_invitation_code">招待コード</string>
+    <string name="register_text_user">すでにアカウントをお持ちですか？</string>
+    <string name="register_text_user_login">サインイン</string>
+    <string name="register_tv">サインアップ</string>
+    <string name="mine_security_edit_phone_hide">電話番号を入力してください</string>
+    <string name="mine_input_pwd">パスワードを入力してください</string>
+    <string name="mine_input_pwd_confir">確認パスワードを入力してください</string>
+    <string name="mine_forget_password">パスワードを忘れた</string>
+
+    <string name="forget_pass_edit_phone">あなたの携帯電話番号</string>
+    <string name="forget_pass_edit_email">您的邮箱</string>
+
+    <string name="forget_pass_reset_pass">重置密码</string>
+
+    <string name="copy_text">复制</string>
+    <string name="save_text">保存</string>
+    <string name="confirm_text">OK</string>
+
+    <string name="forget_retrieve_password">パスワードを取得する</string>
+    <string name="forget_my_invitation_link">私の招待リンク</string>
+    <string name="forget_my_invitation_code">私の招待コード</string>
+    <string name="forget_invitation_poster">招待ポスターを生成</string>
+    <string name="forget_facetoface">としてゲストである</string>
+    <string name="forget_my_income">私の収入</string>
+    <string name="forget_invitation_num">招待状</string>
+    <string name="forget_invitation_record">招待状</string>
+    <string name="forget_Invitee_account">招待者アカウント</string>
+    <string name="forget_rebate_record">リベート記録</string>
+    <string name="forget_rebate_commission">リベート委員会（USDT）</string>
+    <string name="forget_save_pic">画像を保存</string>
+    <string name="forget_ycopy">コピーされました: </string>
+    <string name="forget_save_pic_failed">画像を保存できませんでした</string>
+    <string name="forget_save_pic_success">画像を保存しました</string>
+
+    <string name="forget_language_q">言語を切り替えますか</string>
+    <string name="forget_ch">中国語</string>
+    <string name="forget_en">英語</string>
+    <string name="forget_ko">韓語</string>
+    <string name="forget_ja">日本語</string>
+
+    <string name="forget_update_ts">更新のヒント</string>
+    <string name="forget_flg_ts">強制更新</string>
+
+
+    <string name="share_welcome_reg">登録歓迎 Coin Square</string>
+    <string name="share_welcome_join">確認ボタンを押すと Coin Square 取引所に申し込むことができます</string>
+
+    <string name="mine_coin_info_text_class">種類</string>
+    <string name="mine_coin_info_text_type">ステータス</string>
+    <string name="mine_coin_info_text_address">住所</string>
+    <string name="mine_coin_info_text_txid">TxID</string>
+</resources>

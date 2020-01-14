@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_new_head_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/registered_smile"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="欢迎来到696商城"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/dp_18"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_name" />
+
+                    <EditText
+                        android:id="@+id/mEdt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入姓名/昵称"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_phonenember" />
+
+                    <EditText
+                        android:id="@+id/mEdt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入手机号"
+                        android:inputType="phone|number"
+                        android:maxLength="11"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_verificationcode" />
+
+                    <EditText
+                        android:id="@+id/mEdt_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:inputType="phone|number"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:textSize="@dimen/sp_16" />
+
+                    <teng.wang.comment.utils.TimerButton
+                        android:id="@+id/mTimeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_4"
+                        android:background="@drawable/shape_blue_min_button_layout"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:text="获取验证码"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12"
+                        app:afterText="@string/tv_resend"
+                        app:ms="60000" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_enterpassword" />
+
+                    <EditText
+                        android:id="@+id/mEdt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_confirmpassword" />
+
+                    <EditText
+                        android:id="@+id/mEdt_two_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请确认密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_invitationcode" />
+
+                    <EditText
+                        android:id="@+id/mEdt_Invitation_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="邀请码"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <Button
+                    android:id="@+id/mBtn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_45"
+                    android:alpha="0.5"
+                    android:background="@drawable/shape_blue_button_layout"
+                    android:enabled="false"
+                    android:onClick="onClick"
+                    android:text="注册"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

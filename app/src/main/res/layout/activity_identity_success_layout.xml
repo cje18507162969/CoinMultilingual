@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_F5F5F5"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mine_completecertification"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_identity_congratulations_text"
+                    android:textColor="@color/app_style_blue"
+                    android:textSize="@dimen/sp_20"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_identity_complete_text"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_14"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/identityedit_transaction_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_blue_button_layout"
+                android:text="@string/mine_identity_go_transaction"
+                android:alpha="0.5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_18"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

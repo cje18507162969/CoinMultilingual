@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/assets_account_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Loading"
+                    android:textColor="@color/app_style_blue"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="@string/Loading"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mine_arrow"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/transaction_fb_transact_assets_account_available_text"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/transaction_fb_transact_assets_account_frozen_text"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/transaction_fb_transact_assets_account_convert_text"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/assets_account_available"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/assets_account_frozen"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/assets_account_convert"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/Loading"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_color" />
+
+
+</LinearLayout>

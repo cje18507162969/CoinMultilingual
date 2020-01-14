@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_order_record_screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/base_head_layout"/>
+
+    <LinearLayout
+        android:padding="@dimen/dp_20"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/app_home_text"
+            android:text="@string/transaction_fb_order_record_dialog_status_text"/>
+
+        <LinearLayout
+            android:gravity="center|left"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/order_screen_buy_button"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:background="@drawable/shape_gray_button_layout"
+                android:textColor="@color/app_home_coin_text_color_gray"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/transaction_fb_order_record_dialog_buy_text"/>
+
+            <TextView
+                android:id="@+id/order_screen_sell_button"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:background="@drawable/shape_gray_button_layout"
+                android:textColor="@color/app_home_coin_text_color_gray"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/transaction_fb_order_record_dialog_sell_text"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:background="@drawable/shape_gray_button_layout"
+                android:textColor="@color/app_home_coin_text_color_gray"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/transaction_fb_order_record_dialog_sell_text"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/app_home_text"
+                android:text="@string/mine_order_screen_order_type_text"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/order_screen_payment_no_button"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:textColor="@color/app_home_coin_text_color_gray"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/transaction_fb_order_record_dialog_payment_no_text"/>
+
+                <TextView
+                    android:id="@+id/order_screen_payment_yes_button"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:textColor="@color/app_home_coin_text_color_gray"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/transaction_fb_order_record_dialog_payment_yes_text"/>
+
+
+                <TextView
+                    android:id="@+id/order_screen_complete_button"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:textColor="@color/app_home_coin_text_color_gray"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/transaction_fb_order_record_dialog_complete_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_18"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/order_screen_cancel_button"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:textColor="@color/app_home_coin_text_color_gray"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/transaction_fb_order_record_dialog_cancel_text"/>
+
+                <TextView
+                    android:id="@+id/order_screen_appeal_button"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:textColor="@color/app_home_coin_text_color_gray"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/transaction_fb_order_record_dialog_appeal_text"/>
+
+
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:textColor="@color/app_home_text"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/transaction_fb_order_record_dialog_complete_text"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/sp_10"
+        android:background="@color/app_default"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <TextView
+            android:id="@+id/screen_reset_button"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/app_home_text"
+            android:text="@string/transaction_fb_order_record_dialog_reset_text"/>
+
+        <TextView
+            android:id="@+id/screen_confirm_button"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/app_style_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/white"
+            android:text="@string/transaction_fb_order_record_dialog_confirm_text"/>
+
+    </LinearLayout>
+
+</LinearLayout>

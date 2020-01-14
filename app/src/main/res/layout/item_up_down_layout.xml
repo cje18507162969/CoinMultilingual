@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.coin.market.wight.ProgressBgView
+        android:id="@+id/bg_progress_view"
+        app:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/up_down_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_2">
+
+        <TextView
+            android:id="@+id/up_down_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/Loading"
+            android:textColor="@color/app_home_coin_text_color_red"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/up_down_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="@string/Loading"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

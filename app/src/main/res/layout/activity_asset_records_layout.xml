@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/app_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/asset_records_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:id="@+id/asset_records_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Loading"
+                        android:textColor="@color/app_style_blue"
+                        android:textSize="@dimen/sp_18" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/transaction_fb_transact_assets_account_available_text"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/transaction_fb_transact_assets_account_frozen_text"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/transaction_fb_transact_assets_account_convert_text"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/assets_account_available"
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/Loading"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/assets_account_frozen"
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Loading"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/assets_account_convert"
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/Loading"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/assets_recirds_title_text"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_18" />
+
+                    <ImageView
+                        android:id="@+id/asset_records_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mine_filter" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asset_records_bottom_layout"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/asset_records_button_charge_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/assets_chongbi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/app_home_text"
+                        android:text="@string/assets_button_text_cb"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/asset_records_button_get_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/assets_tibi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/app_home_text"
+                        android:text="@string/assets_button_text_tb"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/asset_records_button_transfer_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/assets_transfer"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/app_home_text"
+                        android:text="@string/assets_recirds_hz_button_title_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/asset_records_button_transaction_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/assets_bibitransaction"/>
+
+                    <TextView
+                        android:id="@+id/asset_records_transaction_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/app_home_text"
+                        android:text="@string/assets_recirds_bb_button_title_text"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/asset_records_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/asset_records_bottom_layout"
+                android:layout_below="@+id/asset_records_top_layout" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

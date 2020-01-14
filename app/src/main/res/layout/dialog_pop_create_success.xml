@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/ll_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_person"
+        android:clickable="true"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:text="@string/mbr_treaty_sf_create_success"
+            android:textColor="@color/txt_color_08024"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/bg_create_b">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:gravity="center"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/color_999999"
+                android:layout_height="match_parent"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/app_default"></View>
+            <TextView
+                android:id="@+id/tv_continue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/ok"
+                android:gravity="center"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/txt_color_3374"
+                android:layout_height="match_parent"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

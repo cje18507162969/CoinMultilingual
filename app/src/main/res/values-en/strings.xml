@@ -1,0 +1,286 @@
+<resources>
+    <string name="app_name">Coin Multilingual</string>
+
+    <string name="mine_phone">phone number</string>
+
+    <string name="mbr_treaty_create">Create contract</string>
+    <string name="mbr_treaty_polebar">lever</string>
+    <string name="mbr_treaty_btc">BTC/USDT index</string>
+    <string name="mbr_treaty_usdt_right">Account equity(USDT)</string>
+    <string name="mbr_treaty_usdt_profit_loss">Unrealized profit loss</string>
+    <string name="mbr_treaty_risk_rate">Risk rate</string>
+    <string name="mbr_treaty_sf_create">Are you sure you want to create a contract?</string>
+    <string name="mbr_treaty_sf_create_success">Successful transaction, you can go to transaction history for details</string>
+
+    <string name="transaction_fb_cy_list">Holding records</string>
+    <string name="transaction_fb_his_list">History record</string>
+    <string name="transaction_all_order">All orders</string>
+    <string name="tv_sell_more">Do more</string>
+    <string name="tv_sell_short">Do short</string>
+    <string name="tv_price_dq">Current price</string>
+    <string name="tv_profit_and_loss">Profit and loss</string>
+    <string name="tv_price_mr">Opening price</string>
+    <string name="tv_price_close">Closing price</string>
+
+    <string name="tv_setting">Set up</string>
+    <string name="tv_close_position_sf">Confirm closing?</string>
+
+    <string name="operate_success">Successful operation</string>
+    <string name="know">Got it</string>
+    <string name="ok">confirm</string>
+    <string name="cancel">cancel</string>
+    //本金：
+    <string name="tv_h_money"><Data>
+    <![CDATA[<font color="#97A0AA">
+        principal：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //手续费：
+    <string name="tv_h_service_charge"><Data>
+    <![CDATA[<font color="#97A0AA">
+        Handling fee：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //杠杆：
+    <string name="tv_h_polebar"><Data>
+    <![CDATA[<font color="#97A0AA">
+        lever：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+
+    //平仓时间：
+    <string name="tv_h_time_pc"><Data>
+    <![CDATA[<font color="#97A0AA">
+        Closing time：</font><font color="#1E3E59">
+        %1$s</font>]]>
+    </Data></string>
+
+
+
+    <string name="mbr_treaty_polebar_money">Amount of leverage %1$s</string>
+    <string name="mbr_treaty_service_charge">Handling fee %1$s</string>
+    <string name="mbr_treaty_order_money">order amount %1$s</string>
+    <string name="mbr_treaty_create_gain">Take profit (profit%1$s）</string>
+    <string name="mbr_treaty_create_zk">Stop loss (loss%1$s）</string>
+
+
+
+    <string name="tv_set_advance">Take profit and stop loss can be set in advance</string>
+
+    <string name="main_radio_group_home">Home</string>
+    <string name="main_radio_group_quotation">行情</string>
+    <string name="main_radio_group_transaction">交易</string>
+    <string name="main_radio_group_treaty">Contract</string>
+    <string name="main_radio_group_order">Order</string>
+    <string name="main_radio_group_assets">Assets</string>
+
+    <string name="button_text_buy">Do more</string>
+    <string name="button_text_sell">Do short</string>
+    <string name="transaction_text_fixed_price">Principal(USDT)</string>
+    <string name="transaction_edit_number">quantity</string>
+    <string name="transaction_edit_price">price</string>
+    <string name="tv_no_risk">no risk</string>
+    <string name="tv_time">time</string>
+    <string name="tv_direction">direction</string>
+
+
+    <string name="transaction_text_entrust">Latest transactions</string>
+
+
+    <string name="assets_button_text_cb">Deposit</string>
+    <string name="assets_button_text_tb">Withdrawal</string>
+    <string name="assets_button_text_all_assets">Total Account Asset Conversion (USDT)</string>
+
+    <string name="transaction_fb_transact_assets_account_available_text">Available</string>
+    <string name="transaction_fb_transact_assets_account_frozen_text">freeze</string>
+    <string name="transaction_fb_transact_assets_account_convert_text">Equivalent (CNY)</string>
+    <string name="assets_recirds_title_text">Financial records</string>
+
+    <string name="Loading">loading...</string>
+    <string name="assets_recirds_item_type_text">status</string>
+    <string name="tv_assetrecord_completed">completed</string>
+    <string name="tv_assetrecord_all">All</string>
+    <string name="tv_assetrecord_recharge">Recharge</string>
+    <string name="tv_assetrecord_openaposition">Open position</string>
+    <string name="tv_close_position">Close position</string>
+    <string name="tv_assetrecord_withdraw">Withdraw</string>
+
+
+    <string name="toast_authentication">Please operate after real-name authentication</string>
+    <string name="toast_no_permission">The current user does not have permission to create a contract</string>
+    <string name="toast_recharge">Insufficient assets, please recharge</string>
+
+    <string name="toast_tb_address_null">Withdrawal address cannot be empty</string>
+    <string name="toast_tb_num_input">Please enter the amount of withdrawal</string>
+    <string name="tv_code_input">please enter verification code</string>
+    <string name="dialog_tb_ok">Confirm withdrawal</string>
+    <string name="mine_security_verification_title_text">safety verification</string>
+    <string name="tv_send">Send</string>
+    <string name="tv_resend">Resend</string>
+
+
+    <string name="home_realnameauthentication">Verified</string>
+    <string name="home_feedback">Feedback</string>
+    <string name="home_real_time_market">Real-time Quotes</string>
+
+    <string name="quotation_button_name">Name</string>
+    <string name="quotation_button_new_price">Latest Price</string>
+    <string name="quotation_button_billboard">Quote change</string>
+
+
+    <string name="tv_delete">delete</string>
+
+    <string name="mine_coin_recharge_text_content">1. The transfer is automatic. USDT ERC20 is based on the ETH chain protocol and requires confirmation from the entire network before it can be credited. \n2. This address is the only transfer address you use on your own, and you can make multiple deposits. \n3. It is forbidden to deposit assets other than USDT ERC20 to this address. Any other asset deposit will not be recovered. \n4.Minimum deposit amount </string>
+    <string name="mine_coin_out_text_content">1. Please make sure that the address is the correct ETH receiving address before withdrawing money. Asset losses due to the wrong address cannot be recovered. \n2.Minimum withdrawal amount</string>
+    <string name="mine_coin_out_address">Withdrawal address</string>
+    <string name="mine_coin_out_money">Handling fee</string>
+    <string name="mine_coin_out_get_numb">Amount received</string>
+
+    <string name="assets_get_coin_address_edit_text">Enter or long-press paste address</string>
+    <string name="assets_get_coin_service_carge_text">Please enter a fee</string>
+    <string name="assets_get_coin_select_text">Select currency</string>
+    <string name="mine_coin_minnum">Minimum withdrawal amount is</string>
+
+
+    <string name="mine_coin_address_add_button">Add address</string>
+    <string name="mine_coin_out_chain_name">链名称</string>
+    <string name="mine_coin_address_eth">ETH address</string>
+    <string name="mine_coin_address_add_eth_wallet">ETH_wallet</string>
+    <string name="mine_coin_address_eth_add">Add ETH address</string>
+    <string name="mine_coin_address_eth_add_edit_hide">Enter or paste ETH (ETH chain) address</string>
+    <string name="mine_coin_address_eth_add_edit_hide_remarks">Enter ETH (ETH chain) remarks</string>
+    <string name="mine_coin_address_eth_text_remarks">Remark</string>
+
+
+
+    <string name="mine_coin_recharge_save_qr">Save QR</string>
+    <string name="mine_coin_recharge_text_address">Deposit address</string>
+    <string name="mine_coin_recharge_coty_address">Copy address</string>
+    <string name="mine_coin_recharge_title_record">Deposit history</string>
+    <string name="mine_coin_outhis">Withdrawal history</string>
+
+    <string name="mine_ordinary_withdrawal">Ordinary withdrawal</string>
+    <string name="mine_pending">Pending</string>
+    <string name="mine_processed">Processed</string>
+    <string name="mine_revoked">Revoked</string>
+    <string name="mine_ordinary_deposit">Ordinary deposit</string>
+    <string name="mine_completed">completed</string>
+
+
+    <string name="mine_identity_verify_title">Authentication</string>
+    <string name="mine_identity_verified">Verified</string>
+    <string name="mine_identity_go_verify_text">Not Certified</string>
+    <string name="mine_identity_mobile">Account Number</string>
+    <string name="mine_identity_num">ID number</string>
+    <string name="mine_identity_edit_name">Name</string>
+    <string name="mine_identity_edit_cod">identity number</string>
+    <string name="mine_identity_edit_name_hide">Please type in your name</string>
+    <string name="mine_identity_edit_card_hide">Please enter identification number</string>
+
+    <string name="tv_illegalname">Illegal name</string>
+    <string name="tv_idcard_invalid">The ID card number entered is invalid</string>
+
+    <string name="mine_identity_country_text">Country / Region</string>
+    <string name="mine_identity_china_text">China</string>
+    <string name="tv_jp">Japan</string>
+    <string name="tv_ko">Korea</string>
+    <string name="tv_en">China</string>
+
+
+    <string name="tv_please_describe">Please describe your problem so we can better help.</string>
+    <string name="tv_please_seltype">Please select a question type.</string>
+    <string name="tv_advisory">advisory</string>
+    <string name="tv_suggest">Suggest</string>
+    <string name="tv_other">other</string>
+    <string name="tv_submit">Submit</string>
+    <string name="tv_question">Question</string>
+    <string name="tv_answer">Answer: </string>
+
+
+    <string name="tv_nobelower">Must not be lower than the current loss ratio</string>
+    <string name="quotation_text_heigh">high</string>
+    <string name="quotation_text_low">low</string>
+    <string name="quotation_text_amount">24H</string>
+    <string name="mine_button_text_security">Security Center</string>
+    <string name="mine_button_text_about">About us</string>
+    <string name="mine_about_hide_text">隐私政策</string>
+    <string name="mine_about_version_code_text">version</string>
+
+    <string name="mine_security_centre_more">other settings</string>
+    <string name="mine_payment_password">Payment password</string>
+    <string name="mine_security_pay">Set up payment password</string>
+    <string name="mine_set_up_payment_password">Please enter payment password</string>
+    <string name="mine_set_up_payment_password_again">Please enter the payment password again</string>
+    <string name="mine_passwords_are_inconsistent_twice">Passwords are inconsistent twice</string>
+
+    <string name="timer_button_text">Obtain</string>
+
+    <string name="forget_pass_former_edit_pass">Please enter the old password</string>
+    <string name="forget_pass_edit_pass">Please enter a new password</string>
+    <string name="forget_pass_edit_pass_confirm">Please confirm the new password</string>
+    <string name="forget_two_new_passwords_entered_inconsistently">Two new passwords entered inconsistently</string>
+
+    <string name="mine_settings_back">Log out</string>
+    <string name="mine_settings_update_password">change Password</string>
+    <string name="forget_switch_language">Switch language</string>
+
+    <string name="mine_log_out">Are you sure you want to log out?</string>
+
+    <string name="register_edit_verify">SMS verification code</string>
+    <string name="register_edit_pass">login password</string>
+    <string name="register_edit_pass_confirm">confirm login password</string>
+    <string name="register_edit_invitation_code">Invitation code</string>
+    <string name="register_text_user">Already have an account?</string>
+    <string name="register_text_user_login">log in</string>
+    <string name="register_tv">registered</string>
+    <string name="mine_security_edit_phone_hide">Please enter phone number</string>
+    <string name="mine_input_pwd">Please enter phone number</string>
+    <string name="mine_input_pwd_confir">Please enter the confirmation password</string>
+    <string name="mine_forget_password">forget password</string>
+
+    <string name="forget_pass_edit_phone">Your phone number</string>
+    <string name="forget_pass_edit_email">您的邮箱</string>
+
+    <string name="forget_pass_reset_pass">重置密码</string>
+
+    <string name="copy_text">复制</string>
+    <string name="save_text">保存</string>
+    <string name="confirm_text">Ok</string>
+
+    <string name="forget_retrieve_password">Retrieve password</string>
+    <string name="forget_my_invitation_link">My invitation link</string>
+    <string name="forget_my_invitation_code">My invitation code</string>
+    <string name="forget_invitation_poster">Generate poster</string>
+    <string name="forget_facetoface">invite in-face</string>
+    <string name="forget_my_income">My income</string>
+    <string name="forget_invitation_num">Invitations</string>
+    <string name="forget_invitation_record">Invitation record</string>
+    <string name="forget_Invitee_account">Invitee account</string>
+    <string name="forget_rebate_record">Rebate record</string>
+    <string name="forget_rebate_commission">Rebate Commission (USDT)</string>
+    <string name="forget_save_pic">Save Picture</string>
+    <string name="forget_ycopy">Copied: </string>
+    <string name="forget_save_pic_failed">Failed to save picture</string>
+    <string name="forget_save_pic_success">Picture saved successfully</string>
+
+    <string name="forget_language_q">Do you want to switch languages</string>
+    <string name="forget_ch">Chinese</string>
+    <string name="forget_en">English</string>
+    <string name="forget_ko">Korean</string>
+    <string name="forget_ja">Japanese</string>
+
+    <string name="forget_update_ts">Update tips</string>
+    <string name="forget_flg_ts">Force update</string>
+
+    <string name="share_welcome_reg">Registration Welcome Coin Square</string>
+    <string name="share_welcome_join">Press the confirmation button on the Coin Square exchangeYou can sign up</string>
+
+    <string name="mine_coin_info_text_class">type</string>
+    <string name="mine_coin_info_text_type">status</string>
+    <string name="mine_coin_info_text_address">address</string>
+    <string name="mine_coin_info_text_txid">TxID</string>
+
+</resources>

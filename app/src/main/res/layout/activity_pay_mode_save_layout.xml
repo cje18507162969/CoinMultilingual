@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <TextView
+            android:id="@+id/pay_mode_save_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_12"
+            android:text="@string/transaction_fb_order_pay_mode_save_title_bank_text"
+            android:textColor="@color/app_home_text"
+            android:textSize="@dimen/sp_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/pay_mode_save_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dp_12"
+                android:background="@drawable/rectangle"
+                android:text="@string/transaction_fb_order_pay_mode_save_hide_button_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/pay_mode_save_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:text="@string/transaction_fb_order_pay_mode_save_name_text"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_12" />
+
+                    <EditText
+                        android:id="@+id/pay_mode_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/transaction_fb_order_pay_mode_save_hide_name_text"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/app_default" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pay_mode_save_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:id="@+id/pay_mode_code_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:text="@string/transaction_fb_order_pay_mode_save_bank_text"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_12" />
+
+                    <EditText
+                        android:id="@+id/pay_mode_code_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/transaction_fb_order_pay_mode_save_hide_bank_text"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/app_default" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pay_mode_save_bank_layout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/pay_mode_save_layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/dp_20"
+                            android:paddingBottom="@dimen/dp_20"
+                            android:text="@string/transaction_fb_order_pay_mode_save_bank_init_text"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_12" />
+
+                        <EditText
+                            android:id="@+id/pay_bank_code_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/transaction_fb_order_pay_mode_save_hide_bank_init_text"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_14" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@color/app_default" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pay_mode_save_layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/dp_20"
+                            android:paddingBottom="@dimen/dp_20"
+                            android:text="@string/transaction_fb_order_pay_mode_save_bank_address_text"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_12" />
+
+                        <EditText
+                            android:id="@+id/pay_address_code_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/transaction_fb_order_pay_mode_save_hide_bank_address_text"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_14" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@color/app_default" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pay_mode_save_qr_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:text="@string/transaction_fb_order_pay_mode_save_qr_title_text"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_12" />
+
+                    <ImageView
+                        android:id="@+id/pay_mode_add_img"
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_80"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/addqrcode"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

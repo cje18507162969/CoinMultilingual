@@ -1,0 +1,285 @@
+<resources>
+    <string name="app_name">Coin 다국어</string>
+
+    <string name="mine_phone">전화 번호</string>
+
+    <string name="mbr_treaty_create">계약서 작성</string>
+    <string name="mbr_treaty_polebar">활용</string>
+    <string name="mbr_treaty_btc">BTC/USDT 지수</string>
+    <string name="mbr_treaty_usdt_right">계정 지분</string>
+    <string name="mbr_treaty_usdt_profit_loss">미실현 손익（USDT）</string>
+    <string name="mbr_treaty_risk_rate">위험률</string>
+    <string name="mbr_treaty_sf_create">계약을 작성 하시겠습니까?</string>
+    <string name="mbr_treaty_sf_create_success">성공적인 거래, 자세한 내용은 거래 내역으로 이동할 수 있습니다</string>
+
+    <string name="transaction_fb_cy_list">기록 보유</string>
+    <string name="transaction_fb_his_list">역사적 기록</string>
+    <string name="transaction_all_order">모든 주문</string>
+    <string name="tv_sell_more">더 많이</string>
+    <string name="tv_sell_short">짧게</string>
+    <string name="tv_price_dq">현재 가격</string>
+    <string name="tv_profit_and_loss">손익</string>
+    <string name="tv_price_mr">시가</string>
+    <string name="tv_price_close">종가</string>
+
+    <string name="tv_setting">설정</string>
+    <string name="tv_close_position_sf">폐쇄 확인?</string>
+
+    <string name="operate_success">작업 성공</string>
+    <string name="know">알았어</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    //本金：
+    <string name="tv_h_money"><Data>
+    <![CDATA[<font color="#97A0AA">
+        교장：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //手续费：
+    <string name="tv_h_service_charge"><Data>
+    <![CDATA[<font color="#97A0AA">
+        취급 수수료：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+    //杠杆：
+    <string name="tv_h_polebar"><Data>
+    <![CDATA[<font color="#97A0AA">
+        활용：</font><font color="#10243A">
+        %1$s</font>]]>
+    </Data></string>
+
+
+    //平仓时间：
+    <string name="tv_h_time_pc"><Data>
+    <![CDATA[<font color="#97A0AA">
+        마감 시간：</font><font color="#1E3E59">
+        %1$s</font>]]>
+    </Data></string>
+
+
+
+    <string name="mbr_treaty_polebar_money">레버리지 금액 %1$s</string>
+    <string name="mbr_treaty_service_charge">취급 수수료 %1$s</string>
+    <string name="mbr_treaty_order_money">주문 금액 %1$s</string>
+    <string name="mbr_treaty_create_gain">이익을 얻으십시오 (이익%1$s）</string>
+    <string name="mbr_treaty_create_zk">손절매 (손실%1$s）</string>
+
+
+
+    <string name="tv_set_advance">이익을 가져 와서 손실을 미리 설정할 수 있습니다</string>
+
+    <string name="main_radio_group_home">홈</string>
+    <string name="main_radio_group_quotation">行情</string>
+    <string name="main_radio_group_transaction">交易</string>
+    <string name="main_radio_group_treaty">계약</string>
+    <string name="main_radio_group_order">주문</string>
+    <string name="main_radio_group_assets">자산</string>
+    <string name="button_text_buy">더 많이</string>
+    <string name="button_text_sell">짧게</string>
+    <string name="transaction_text_fixed_price">교장 (USDT)</string>
+    <string name="transaction_edit_number">수량</string>
+    <string name="transaction_edit_price">가격</string>
+    <string name="tv_no_risk">위험 없음</string>
+    <string name="tv_time">시간</string>
+    <string name="tv_direction">방향</string>
+
+
+    <string name="transaction_text_entrust">최신 거래</string>
+
+
+    <!--资产-->
+    <string name="assets_button_text_cb">예금</string>
+    <string name="assets_button_text_tb">인출</string>
+    <string name="assets_button_text_all_assets">총 계정 자산 전환 (USDT)</string>
+
+
+    <string name="transaction_fb_transact_assets_account_available_text">가능</string>
+    <string name="transaction_fb_transact_assets_account_frozen_text">동결</string>
+    <string name="transaction_fb_transact_assets_account_convert_text">동등한 (CNY)</string>
+    <string name="assets_recirds_title_text">재무 기록</string>
+
+    <string name="Loading">되기</string>
+    <string name="assets_recirds_item_type_text">상태</string>
+    <string name="tv_assetrecord_completed">완료</string>
+    <string name="tv_assetrecord_all">모두</string>
+    <string name="tv_assetrecord_recharge">재충전</string>
+    <string name="tv_assetrecord_openaposition">위치를여십시오</string>
+    <string name="tv_close_position">위치를 닫습니다</string>
+    <string name="tv_assetrecord_withdraw">인출</string>
+
+
+    <string name="toast_authentication">실명 인증 후에 조작하십시오</string>
+    <string name="toast_no_permission">현재 사용자에게 계약을 작성할 권한이 없습니다</string>
+    <string name="toast_recharge">자산이 부족합니다. 충전하십시오</string>
+
+    <string name="toast_tb_address_null">출금 주소는 비워 둘 수 없습니다</string>
+    <string name="toast_tb_num_input">인출 금액을 입력하십시오</string>
+    <string name="tv_code_input">인증 코드를 입력하십시오</string>
+    <string name="dialog_tb_ok">출금 확인</string>
+    <string name="mine_security_verification_title_text">보안 검증</string>
+    <string name="tv_send">보내기</string>
+    <string name="tv_resend">재발송</string>
+
+
+    <string name="home_realnameauthentication">실명 인증</string>
+    <string name="home_feedback">탈 중앙화</string>
+    <string name="home_real_time_market">실시간 시세</string>
+
+    <string name="quotation_button_name">이름</string>
+    <string name="quotation_button_new_price">최신 가격</string>
+    <string name="quotation_button_billboard">변경</string>
+
+    <string name="mine_coin_recharge_text_content">1. 이체는 자동으로 이루어집니다 USDT ERC20은 ETH 체인 프로토콜을 기반으로하며, 전체 네트워크의 확인을 거쳐 신용이 부여됩니다. \n2.이 주소는 귀하가 단독으로 사용하는 유일한 송금 주소이며 여러 번 입금 할 수 있습니다. \n3. USDT ERC20 이외의 자산은이 주소로 입금 할 수 없으며, 다른 자산 입금은 복구되지 않습니다. \n4. 최소 입금액 </string>
+    <string name="mine_coin_out_text_content">1. 돈을 인출하기 전에 주소가 올바른 ETH 수신 주소인지 확인하십시오 잘못된 주소로 인한 자산 손실은 복구 할 수 없습니다. \n2. 최소 인출 금액</string>
+
+    <string name="mine_coin_out_address">인출 주소</string>
+    <string name="mine_coin_out_money">취급 수수료</string>
+    <string name="mine_coin_out_get_numb">받은 금액</string>
+
+    <string name="assets_get_coin_address_edit_text">붙여 넣기 주소를 입력하거나 길게 누르십시오</string>
+    <string name="assets_get_coin_service_carge_text">수수료를 입력하십시오</string>
+    <string name="assets_get_coin_select_text">통화를 선택하십시오</string>
+    <string name="mine_coin_minnum">최소 인출 금액은</string>
+
+
+    <string name="mine_coin_address_add_button">주소 추가</string>
+    <string name="mine_coin_out_chain_name">链名称</string>
+    <string name="mine_coin_address_eth">ETH 주소</string>
+    <string name="mine_coin_address_add_eth_wallet">ETH_wallet</string>
+    <string name="mine_coin_address_eth_add">ETH 주소 추가</string>
+    <string name="mine_coin_address_eth_add_edit_hide">ETH (ETH 체인) 주소 입력 또는 붙여 넣기</string>
+    <string name="mine_coin_address_eth_add_edit_hide_remarks">ETH (ETH 체인) 비고를 입력하십시오</string>
+    <string name="mine_coin_address_eth_text_remarks">비고</string>
+
+    <string name="tv_delete">삭제</string>
+
+    <string name="mine_coin_recharge_save_qr">QR 코드 저장</string>
+    <string name="mine_coin_recharge_text_address">입금 주소</string>
+    <string name="mine_coin_recharge_coty_address">주소 복사</string>
+    <string name="mine_coin_recharge_title_record">입금 내역</string>
+    <string name="mine_coin_outhis">출금 내역</string>
+
+    <string name="mine_ordinary_withdrawal">보통 철수</string>
+    <string name="mine_pending">대기 중</string>
+    <string name="mine_processed">가공</string>
+    <string name="mine_revoked">해지</string>
+    <string name="mine_ordinary_deposit">보통 예금</string>
+    <string name="mine_completed">완료</string>
+
+
+    <string name="mine_identity_verify_title">신원 인증</string>
+    <string name="mine_identity_verified">인증</string>
+    <string name="mine_identity_go_verify_text">인증되지 않음</string>
+    <string name="mine_identity_mobile">계정</string>
+    <string name="mine_identity_num">아이디 번호</string>
+    <string name="mine_identity_edit_name">이름</string>
+    <string name="mine_identity_edit_cod">아이디 번호</string>
+    <string name="mine_identity_edit_name_hide">이름을 입력하십시오</string>
+    <string name="mine_identity_edit_card_hide">아이디 번호를 입력하십시오</string>
+
+    <string name="tv_illegalname">잘못된 이름</string>
+    <string name="tv_idcard_invalid">입력 한 ID 카드 번호가 유효하지 않습니다</string>
+
+    <string name="mine_identity_country_text">국가 지역</string>
+    <string name="mine_identity_china_text">중국</string>
+    <string name="tv_jp">일본</string>
+    <string name="tv_ko">한국</string>
+    <string name="tv_en">영국</string>
+
+
+    <string name="tv_please_describe">더 나은 도움을 드릴 수 있도록 문제를 설명하십시오</string>
+    <string name="tv_please_seltype">질문 유형을 선택하십시오</string>
+    <string name="tv_advisory">컨설팅</string>
+    <string name="tv_suggest">제안</string>
+    <string name="tv_other">기타</string>
+    <string name="tv_submit">제출</string>
+    <string name="tv_question">질문</string>
+    <string name="tv_answer">답변: </string>
+
+
+    <string name="tv_nobelower">현재 손실 비율보다 낮아서는 안됩니다</string>
+    <string name="quotation_text_heigh">높음</string>
+    <string name="quotation_text_low">낮음</string>
+    <string name="quotation_text_amount">24H</string>
+    <string name="mine_button_text_security">보안 센터</string>
+    <string name="mine_button_text_about">우리에 대해</string>
+    <string name="mine_about_hide_text">隐私政策</string>
+    <string name="mine_about_version_code_text">버전</string>
+
+    <string name="mine_security_centre_more">다른 설정</string>
+    <string name="mine_payment_password">결제 비밀번호</string>
+    <string name="mine_security_pay">결제 비밀번호 설정</string>
+    <string name="mine_set_up_payment_password">결제 비밀번호를 입력하십시오</string>
+    <string name="mine_set_up_payment_password_again">결제 비밀번호를 다시 입력하십시오</string>
+    <string name="mine_passwords_are_inconsistent_twice">암호가 두 번 일치하지 않습니다</string>
+
+    <string name="timer_button_text">입수</string>
+
+    <string name="forget_pass_former_edit_pass">기존 비밀번호를 입력하십시오</string>
+    <string name="forget_pass_edit_pass">새 비밀번호를 입력하십시오</string>
+    <string name="forget_pass_edit_pass_confirm">새 비밀번호를 확인하십시오</string>
+    <string name="forget_two_new_passwords_entered_inconsistently">일치하지 않는 두 개의 새 비밀번호</string>
+
+    <string name="mine_settings_back">출구</string>
+    <string name="mine_settings_update_password">비밀번호 변경</string>
+    <string name="forget_switch_language">언어 전환</string>
+
+    <string name="mine_log_out">로그 아웃 하시겠습니까?</string>
+
+    <string name="register_edit_verify">SMS 인증 코드</string>
+    <string name="register_edit_pass">로그인 비밀번호</string>
+    <string name="register_edit_pass_confirm">로그인 비밀번호 확인</string>
+    <string name="register_edit_invitation_code">초대 코드</string>
+    <string name="register_text_user">이미 계정이 있습니까?</string>
+    <string name="register_text_user_login">로그인</string>
+    <string name="register_tv">가입</string>
+    <string name="mine_security_edit_phone_hide">전화 번호를 입력하십시오</string>
+    <string name="mine_input_pwd">비밀번호를 입력하십시오</string>
+    <string name="mine_input_pwd_confir">확인 비밀번호를 입력하십시오</string>
+    <string name="mine_forget_password">비밀번호를 잊어 버렸습니다</string>
+
+    <string name="forget_pass_edit_phone">휴대 전화 번호</string>
+    <string name="forget_pass_edit_email">您的邮箱</string>
+
+    <string name="forget_pass_reset_pass">重置密码</string>
+
+    <string name="copy_text">复制</string>
+    <string name="save_text">保存</string>
+    <string name="confirm_text">OK</string>
+
+    <string name="forget_retrieve_password">비밀번호 검색</string>
+    <string name="forget_my_invitation_link">초대 링크</string>
+    <string name="forget_my_invitation_code">초대 코드</string>
+    <string name="forget_invitation_poster">초대 포스터 생성</string>
+    <string name="forget_facetoface">대면하여 초청하다</string>
+    <string name="forget_my_income">내 수입</string>
+    <string name="forget_invitation_num">초대장</string>
+    <string name="forget_invitation_record">기록을 초대</string>
+    <string name="forget_Invitee_account">초대받은 사람 계정</string>
+    <string name="forget_rebate_record">리베이트 기록</string>
+    <string name="forget_rebate_commission">리베이트위원회 (USDT)</string>
+    <string name="forget_save_pic">사진 저장</string>
+    <string name="forget_ycopy">コピーされました: </string>
+    <string name="forget_save_pic_failed">사진을 저장하지 못했습니다</string>
+    <string name="forget_save_pic_success">사진이 성공적으로 저장되었습니다</string>
+
+
+    <string name="forget_language_q">언어를 바꾸시겠습니까</string>
+    <string name="forget_ch">중국어</string>
+    <string name="forget_en">영어</string>
+    <string name="forget_ko">한국어</string>
+    <string name="forget_ja">일본어</string>
+
+    <string name="forget_update_ts">업데이트 팁</string>
+    <string name="forget_flg_ts">강제 업데이트</string>
+
+    <string name="share_welcome_reg">등록 환영 Coin Square</string>
+    <string name="share_welcome_join">확인 버튼을 누르면 Coin Square 거래소에가입할 수 있습니다</string>
+
+    <string name="mine_coin_info_text_class">타입</string>
+    <string name="mine_coin_info_text_type">상태</string>
+    <string name="mine_coin_info_text_address">주소</string>
+    <string name="mine_coin_info_text_txid">TxID</string>
+</resources>

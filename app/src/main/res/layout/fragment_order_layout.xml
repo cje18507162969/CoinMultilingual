@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/txt_color_f1f4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:text="@string/transaction_all_order"
+            android:textColor="@color/txt_color_32"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:padding="@dimen/dp_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/order_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/txt_color_32"
+                            android:textSize="@dimen/sp_24"
+                            android:text="@string/transaction_fb_cy_list"/>
+
+                        <TextView
+                            android:id="@+id/order_list_his"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/sp_15"
+                            android:text="@string/transaction_fb_his_list"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/order_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+    </LinearLayout>
+</layout>

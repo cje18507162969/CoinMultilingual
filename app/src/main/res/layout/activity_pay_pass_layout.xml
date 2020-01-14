@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/titleBar"
+                layout="@layout/base_head_layout" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp_100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp_30">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_18"
+                            android:text="@string/mine_security_pay"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_40"
+                            android:layout_marginRight="@dimen/dp_40"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/registered_password" />
+
+                                    <EditText
+                                        android:id="@+id/pay_password"
+                                        android:layout_width="@dimen/dp_0"
+                                        android:layout_height="@dimen/dp_56"
+                                        android:layout_marginLeft="@dimen/dp_6"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="@string/mine_set_up_payment_password"
+                                        android:inputType="textPassword"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/color_999999"
+                                        android:textSize="@dimen/sp_16" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_1"
+                                    android:background="@color/line_color" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/registered_confirmpwd" />
+
+                                    <EditText
+                                        android:id="@+id/pay_two_password"
+                                        android:layout_width="@dimen/dp_0"
+                                        android:layout_height="@dimen/dp_56"
+                                        android:layout_marginLeft="@dimen/dp_6"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="@string/mine_set_up_payment_password_again"
+                                        android:inputType="textPassword"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/color_999999"
+                                        android:textSize="@dimen/sp_16" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_1"
+                                    android:background="@color/line_color" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/registered_code" />
+
+                                    <EditText
+                                        android:id="@+id/pay_code"
+                                        android:layout_width="@dimen/dp_0"
+                                        android:layout_height="@dimen/dp_56"
+                                        android:layout_marginLeft="@dimen/dp_6"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="@string/register_edit_verify"
+                                        android:inputType="text"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/color_999999"
+                                        android:textSize="@dimen/sp_16" />
+
+                                    <teng.wang.comment.utils.TimerButton
+                                        android:id="@+id/mTimeBtn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/dp_4"
+                                        android:background="@color/transparent"
+                                        android:gravity="center"
+                                        android:padding="@dimen/dp_4"
+                                        android:text="@string/timer_button_text"
+                                        android:textColor="@color/app_style_blue"
+                                        android:textSize="@dimen/sp_16"
+                                        app:afterText="@string/tv_resend"
+                                        app:ms="60000" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_1"
+                                    android:background="@color/line_color" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/pay_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_marginLeft="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_40"
+                            android:layout_marginRight="@dimen/dp_40"
+                            android:background="@drawable/shape_blue_button_layout"
+                            android:text="@string/confirm_text"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/base_bottom_layout" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

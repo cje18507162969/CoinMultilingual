@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/titleBar"
+                layout="@layout/base_head_layout" />
+
+            <LinearLayout
+                android:padding="@dimen/dp_12"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/assets_button_text_cb"
+                    android:textColor="@color/app_home_text"
+                    android:textSize="@dimen/sp_18" />
+
+                <LinearLayout
+                    android:id="@+id/coins_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_6">
+
+                    <TextView
+                        android:id="@+id/recharge_coin_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Loading"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/assets_get_coin_select_text"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/sp_12" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:src="@drawable/mine_arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/shape_gray_button_layout"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_20">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20">
+                            <ImageView
+                                android:id="@+id/coin_recharge_qr"
+                                android:layout_width="@dimen/dp_200"
+                                android:layout_height="@dimen/dp_200"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/save_qr_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_30"
+                            android:background="@drawable/shape_save_button_layout"
+                            android:paddingLeft="@dimen/dp_12"
+                            android:paddingTop="@dimen/dp_4"
+                            android:paddingRight="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:text="@string/mine_coin_recharge_save_qr"
+                            android:textColor="@color/app_style_blue_text"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_22"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/sp_13"
+                            android:text="@string/mine_coin_recharge_text_address"/>
+
+                        <TextView
+                            android:id="@+id/coin_recharge_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="@string/Loading"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/coin_recharge_copy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/shape_white_button_layout"
+                            android:paddingLeft="@dimen/dp_12"
+                            android:paddingTop="@dimen/dp_4"
+                            android:paddingRight="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:text="@string/mine_coin_recharge_coty_address"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/coin_recharge_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:padding="@dimen/dp_8"
+                        tools:text="@string/mine_coin_recharge_text_content"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/coins_fr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</layout>

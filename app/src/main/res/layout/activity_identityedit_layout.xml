@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_F5F5F5"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:text="@string/mine_identity_verify_title"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/color_F5F5F5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/mine_identity_country_text"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:text="@string/mine_identity_china_text"
+                            android:textColor="@color/app_home_text"
+                            android:textSize="@dimen/sp_16"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_12">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/dp_10">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/mine_identity_edit_name"
+                                android:textColor="@color/app_home_text" />
+
+                            <EditText
+                                android:id="@+id/identityedit_edit_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:background="@null"
+                                android:hint="@string/mine_identity_edit_name_hide"
+                                android:textColor="@color/app_home_text"
+                                android:textSize="@dimen/sp_12" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:layout_marginTop="@dimen/dp_2"
+                                android:background="@color/color_F5F5F5" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/dp_10">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/mine_identity_edit_cod"
+                                android:textColor="@color/app_home_text" />
+
+                            <EditText
+                                android:id="@+id/identityedit_edit_card"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:background="@null"
+                                android:hint="@string/mine_identity_edit_card_hide"
+                                android:textColor="@color/app_home_text"
+                                android:textSize="@dimen/sp_12"
+                                android:maxLength="18"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:layout_marginTop="@dimen/dp_2"
+                                android:background="@color/color_F5F5F5" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/identityedit_next_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/dp_12"
+                        android:alpha="0.5"
+                        android:background="@drawable/shape_blue_button_layout"
+                        android:text="@string/home_realnameauthentication"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_18" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/settled_card_img1"
+                            android:layout_width="@dimen/dp_280"
+                            android:layout_height="@dimen/dp_160"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_18"
+                            android:src="@drawable/mine_verified_iccardfront" />
+
+                        <ImageView
+                            android:id="@+id/settled_card_img2"
+                            android:layout_width="@dimen/dp_280"
+                            android:layout_height="@dimen/dp_160"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_18"
+                            android:src="@drawable/mine_verified_iccardback" />
+
+                        <ImageView
+                            android:id="@+id/settled_card_img3"
+                            android:layout_width="@dimen/dp_280"
+                            android:layout_height="@dimen/dp_160"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_18"
+                            android:src="@drawable/hand_heldphoto" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

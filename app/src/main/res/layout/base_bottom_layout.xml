@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/bottom_layout"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/waveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_alignParentBottom="true"
+            android:scaleY="-1"
+            app:mwhCloseColor="@color/app_style_blue_min"
+            app:mwhColorAlpha="0.45"
+            app:mwhGradientAngle="45"
+            app:mwhProgress="1"
+            app:mwhStartColor="@color/app_style_blue"
+            app:mwhVelocity="1"
+            app:mwhWaveHeight="30dp"
+            app:mwhWaves="MultiWave" />
+
+    </LinearLayout>
+
+</layout>

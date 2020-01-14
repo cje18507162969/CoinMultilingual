@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:padding="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14"
+                android:text="No.4"/>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:padding="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#707070"
+                android:textSize="@dimen/sp_14"
+                android:text="Wjs****@gmail.com"/>
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#707070"
+                android:textSize="@dimen/sp_12"
+                android:text="2032.16"/>
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12"
+                android:text="USDT"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/app_default"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+    </LinearLayout>
+</layout>

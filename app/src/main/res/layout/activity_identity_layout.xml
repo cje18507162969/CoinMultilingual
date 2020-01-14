@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:text="@string/mine_identity_verify_title"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_18" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/color_F5F5F5" />
+
+        <LinearLayout
+            android:id="@+id/identity_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/identity_button_layout"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mine_identity_verify_title"
+                    android:textColor="@color/app_home_text"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/identity_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_prompt" />
+
+                    <TextView
+                        android:id="@+id/identity_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/mine_identity_go_verify_text"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_coin_text_color_red" />
+
+                    <ImageView
+                        android:id="@+id/identity_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/mine_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_F5F5F5" />
+
+            <LinearLayout
+                android:id="@+id/identity_no_layout"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/identity_yes_layout"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_12">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/mine_identity_edit_name"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        android:id="@+id/identity_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/Loading"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/mine_identity_mobile"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        android:id="@+id/identity_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/Loading"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/mine_identity_uid_text"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        android:id="@+id/identity_uid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/Loading"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/mine_identity_country_text"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        android:id="@+id/identity_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/Loading"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/mine_identity_num"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        android:id="@+id/identity_cardid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="@string/Loading"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

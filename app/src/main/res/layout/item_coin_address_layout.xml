@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/shape_gray_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_addresswallet"/>
+
+                    <TextView
+                        android:id="@+id/coin_record_type"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/app_home_text"
+                        android:text="@string/mine_coin_address_add_eth_wallet"/>
+
+                    <TextView
+                        android:id="@+id/coin_record_time"
+                        android:visibility="gone"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_sky_blue_min_layout"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/app_style_blue_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center|left"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_addresswallet"/>
+
+                    <TextView
+                        android:id="@+id/item_coin_address_code"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_666666"
+                        android:text="@string/Loading"
+                        android:textSize="@dimen/sp_12"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/address_delete"
+                android:paddingLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_style_blue_text"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/tv_delete"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

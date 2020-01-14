@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+      <!--  <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/mine_order"
+            android:title="@string/mine_button_text_order" />
+        <item
+            android:id="@+id/nav_publish"
+            android:icon="@drawable/mine_ad"
+            android:title="@string/mine_button_text_advert" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_identity"-->
+            <!--android:icon="@drawable/mine_authentication"-->
+            <!--android:title="@string/mine_identity_verify_title" />-->
+       <!-- <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/mine_merchantssettled"
+            android:title="@string/mine_button_text_shop" />
+        <item
+            android:id="@+id/nav_pay_mode"
+            android:icon="@drawable/mine_paymentmethod"
+            android:title="@string/mine_button_text_pay_mode" />-->
+        <item
+            android:id="@+id/nav_security"
+            android:icon="@drawable/mine_security"
+            android:title="@string/mine_button_text_security" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/mine_aboutus"
+            android:title="@string/mine_button_text_about" />
+        <!--<item
+            android:id="@+id/nav_service"
+            android:icon="@drawable/mine_customerservice"
+            android:title="@string/mine_button_text_service" />-->
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/mine_setting"
+            android:title="@string/tv_setting" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:title="@string/shoppingCart" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:title="@string/shoppingCart" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

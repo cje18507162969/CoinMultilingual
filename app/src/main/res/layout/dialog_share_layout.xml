@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dp_30"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/dialog_share_center_layout"
+            android:background="@drawable/share_dialog_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/share_dialog_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/forget_facetoface"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_23"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/share_qr"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_200"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_30" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/share_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel"/>
+    </LinearLayout>
+
+
+</LinearLayout>

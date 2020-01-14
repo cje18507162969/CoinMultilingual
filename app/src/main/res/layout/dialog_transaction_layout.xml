@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_transaction_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_transaction_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/app_default"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/dp_12"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/Loading"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_4"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:text="@string/transaction_fb_buy_item_unit_price_text"/>
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_style_blue"
+                    android:textSize="@dimen/sp_14"
+                    android:text="¥ 7.02"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/transaction_buy_usdt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/dialog_transaction_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_36"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/app_style_blue_text"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/app_style_blue_text"
+                app:tabTextColor="@color/color_999999" />
+
+            <View
+                android:background="@color/app_default"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/shape_gray_line_layout"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/transaction_edit"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_8"
+                android:paddingLeft="@dimen/dp_10"
+                android:hint="@string/transaction_fb_edit_hide_text"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/app_home_text"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/app_home_text"
+                android:text="CNY"/>
+
+            <View
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_marginBottom="@dimen/dp_7"
+                android:background="@color/app_default"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/dialog_transaction_all"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/app_style_blue"
+                android:text="@string/transaction_fb_dialog_all_button"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:text="@string/transaction_fb_dialog_text_xe"/>
+
+                <TextView
+                    android:id="@+id/quota_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:text="@string/Loading"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:text="@string/transaction_fb_dialog_transaction_numb_text"/>
+
+                <TextView
+                    android:id="@+id/numb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:text="@string/Loading"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:text="@string/transaction_fb_dialog_transaction_all_money"/>
+
+                <TextView
+                    android:id="@+id/all_numb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_style_blue"
+                    android:text="0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dialog_time_button"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp_22"
+            android:gravity="center"
+            android:background="@drawable/shape_gray_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/white"
+            android:text="@string/transaction_fb_dialog_auto_cancel"/>
+
+        <TextView
+            android:id="@+id/dialog_transaction_confirm_button"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:gravity="center"
+            android:background="@drawable/rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/white"
+            android:text="@string/transaction_fb_dialog_confirm_order"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_4"
+    android:paddingBottom="@dimen/dp_4"
+    android:layout_gravity="left"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/bt_type"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/shape_feedback_select_no_bg"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginRight="@dimen/dp_2"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/app_style_blue"
+        android:text="商城问题"/>
+
+</LinearLayout>

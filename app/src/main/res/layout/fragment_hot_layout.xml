@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/item_coin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_name1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_price1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@drawable/selector_main_tab_text_color"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_rate1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@drawable/selector_main_tab_text_color"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_price_cny1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/item_coin_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_name1_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_price1_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@drawable/selector_main_tab_text_color"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_rate1_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@drawable/selector_main_tab_text_color"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_price_cny1_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/item_coin_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_name1_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_price1_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@drawable/selector_main_tab_text_color"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_rate1_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@drawable/selector_main_tab_text_color"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_price_cny1_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Loading"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/coin_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/bind_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:text="@string/mine_bind_phone_title_text"
+                android:textColor="@color/app_home_text"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/bind_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mine_bind_phone_phone_text"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/color_999999" />
+
+                <LinearLayout
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_14"
+                        android:text="@string/mine_bind_phone_hide_left_text"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_opt"/>
+
+                    <EditText
+                        android:id="@+id/bind_phone_edit"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:padding="@dimen/dp_4"
+                        android:gravity="left|center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/mine_security_edit_phone_hide"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/color_F5F5F5" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bind_phone_edit_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_blue_button_layout"
+                android:text="@string/mine_bind_phone_next_button"
+                android:alpha="0.5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_18"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

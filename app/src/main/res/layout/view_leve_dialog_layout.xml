@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/lLayout_bg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_leve_dialog"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_vip"
+            android:layout_margin="@dimen/dp_20"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/btn_neg"
+                android:padding="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_c2c_layout"
+                android:gravity="center"
+                android:text="升级成为VIP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_hhr"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/btn_pos"
+                android:padding="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_c2c_layout"
+                android:gravity="center"
+                android:text="升级成为合伙人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

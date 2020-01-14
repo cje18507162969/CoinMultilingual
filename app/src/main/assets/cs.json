@@ -1,0 +1,29 @@
+{
+  "data": [{
+    "money": 300,
+    "bgcolor":0,
+    "select": true
+  },{
+    "money": 500,
+    "bgcolor":0,
+    "select": false
+  },{
+    "money": 1000,
+    "bgcolor":0,
+    "select": false
+  },{
+    "money": 2000,
+    "bgcolor":0,
+    "select": false
+  },{
+    "money": 5000,
+    "bgcolor":0,
+    "select": false
+  },{
+    "money": 10000,
+    "bgcolor":0,
+    "select": false
+  }],
+  "status": "success",
+  "error": ""
+}

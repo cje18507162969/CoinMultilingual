@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_above="@+id/mBtn_Exit_logon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/titleBar"
+                    layout="@layout/base_head_layout"/>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_feedback_edit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/mEdt_feedback"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_200"
+                            android:background="@null"
+                            android:gravity="top"
+                            android:hint="@string/tv_please_describe"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:inputType="textMultiLine"
+                            android:textSize="@dimen/sp_14"
+                            android:maxLength="150"/>
+                        <TextView
+                            android:id="@+id/mTv_Digit_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/mEdt_feedback"
+                            android:layout_alignTop="@+id/mEdt_feedback"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_175"
+                            android:text="0/150"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/shape_feedback_edit_layout"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="14sp"
+                        android:text="@string/tv_please_seltype"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/publish_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/shape_feedback_edit_layout"
+                    android:padding="@dimen/dp_10"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv1"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="@dimen/dp_100"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible"
+                            android:src="@mipmap/buyin_add" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv2"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="@dimen/dp_100"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            android:src="@mipmap/buyin_add" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv3"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="@dimen/dp_100"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            android:src="@mipmap/buyin_add" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/mBtn_Exit_logon"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:background="@drawable/shape_blue_button_layout"
+            android:onClick="onClick"
+            android:text="@string/tv_submit"
+            android:alpha="0.5"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</layout>

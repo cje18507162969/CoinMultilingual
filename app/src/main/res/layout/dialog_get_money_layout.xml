@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_51"
+                android:layout_gravity="center"
+                android:background="@drawable/tit_transferaccounts"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mbr_select_wallet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_15" />
+
+                <ImageView
+                    android:id="@+id/money_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:src="@drawable/close" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_20">
+
+                <LinearLayout
+                    android:id="@+id/getmoney_aic"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/aic_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pi_choose_yes" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mbr_wallet"
+                            android:textSize="@dimen/sp_13"
+                            android:textColor="@color/color_333333" />
+
+                        <TextView
+                            android:id="@+id/balance_aic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="（余额：正在加载...）"
+                            android:textSize="@dimen/sp_13"
+                            android:textColor="@color/color_333333" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:id="@+id/getmoney_wallet"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/wallet_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pi_choose_no" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="奖金钱包"
+                            android:textSize="@dimen/sp_13"
+                            android:textColor="@color/color_333333" />
+
+                        <TextView
+                            android:id="@+id/balance_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="（余额：正在加载...）"
+                            android:textSize="@dimen/sp_13"
+                            android:textColor="@color/color_333333" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <TextView
+                    android:id="@+id/getmoney_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:layout_marginBottom="@dimen/dp_58"
+                    android:background="@drawable/btn_transferaccounts"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

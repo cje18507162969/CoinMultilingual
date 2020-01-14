@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/dp_12"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fingerprint_cancel_button"
+            android:padding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999"
+            android:text="@string/mine_security_verification_fingerprint_title_text"
+            android:textSize="@dimen/sp_14"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:id="@+id/fingerprint_say_hello_name"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_20"
+                    android:text="@string/Loading"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fingerprint_login_button"
+                android:padding="@dimen/dp_10"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/addqrcode"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/sp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/color_999999"
+                    android:text="@string/mine_security_verification_fingerprint_login_text"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fingerprint_more_login_button"
+                android:padding="@dimen/dp_10"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_style_blue"
+                android:text="@string/mine_security_verification_fingerprint_more_login_text"
+                android:textSize="@dimen/sp_14"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/transaction_bb"
+                    android:paddingLeft="@dimen/dp_40"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:gravity="center"
+                    android:background="@drawable/shape_blue_line_button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_style_blue"
+                    android:text="@string/transaction_button_text_bb"/>
+
+                <TextView
+                    android:id="@+id/transaction_fb"
+                    android:paddingLeft="@dimen/dp_40"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/shape_gray_button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_666666"
+                    android:text="@string/transaction_button_text_fb"/>
+            </LinearLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/transaction_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

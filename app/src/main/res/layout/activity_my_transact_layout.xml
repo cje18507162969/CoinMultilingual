@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+        <Button
+            android:id="@+id/btn_publish_text"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_margin="@dimen/dp_12"
+            android:background="@drawable/shape_blue_button_layout"
+            android:onClick="onClick"
+            android:text="@string/transaction_fb_transact_publish_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+
+
+        <ScrollView
+            android:layout_below="@+id/titleBar"
+            android:layout_above="@+id/btn_publish_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_transact_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/transaction_fb_order_launch_poster_buy_text"
+                    android:textColor="@color/app_home_text"
+                    android:textSize="@dimen/sp_18" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/my_transact_content_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_200"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/shape_gray_button_layout"
+                        android:gravity="top"
+                        android:hint="@string/transaction_fb_transact_edit_hide"
+                        android:inputType="textMultiLine"
+                        android:maxLength="150"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:textSize="@dimen/sp_12" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction_fb_transact_transact_mode_text"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_14" />
+
+                    <LinearLayout
+                        android:id="@+id/no_pay_layout"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_14"
+                            android:textColor="@color/app_home_text"
+                            android:text="您还未添加支付方式"/>
+
+                        <TextView
+                            android:id="@+id/no_pay_button"
+                            android:background="@drawable/shape_blue_button_layout"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12"
+                            android:text="点此添加交易方式"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yes_pay_layout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/my_transact_bank_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/transaction_buy_bankcard" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_weight="1"
+                                android:text="@string/transaction_fb_transact_transact_mode_bank_text"
+                                android:textColor="@color/app_home_text"
+                                android:textSize="@dimen/sp_14" />
+
+                            <ImageView
+                                android:id="@+id/my_transact_bank_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/mine_switchon" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_transact_alipay_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/transaction_buy_alipay" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_weight="1"
+                                android:text="@string/transaction_fb_transact_transact_mode_alipay_text"
+                                android:textColor="@color/app_home_text"
+                                android:textSize="@dimen/sp_14" />
+
+                            <ImageView
+                                android:id="@+id/my_transact_alipay_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/mine_switchon" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/my_transact_weix_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/transaction_buy_wechat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_weight="1"
+                                android:text="@string/transaction_fb_transact_transact_mode_weix_text"
+                                android:textColor="@color/app_home_text"
+                                android:textSize="@dimen/sp_14" />
+
+                            <ImageView
+                                android:id="@+id/my_transact_weix_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/mine_switchon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/app_default" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_home_text"
+                        android:textSize="@dimen/sp_14"
+                        android:text="@string/transaction_fb_transact_transact_be_careful_text"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_12"
+                            android:textColor="@color/color_999999"
+                            android:text="@string/transaction_fb_transact_transact_be_careful_text1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_12"
+                            android:textColor="@color/color_999999"
+                            android:text="@string/transaction_fb_transact_transact_be_careful_text2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

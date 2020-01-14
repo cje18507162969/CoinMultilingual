@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <teng.wang.comment.widget.NoScrollViewPages
+                android:id="@+id/home_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/home_rgMainTab"/>
+
+            <RadioGroup
+                android:id="@+id/home_rgMainTab"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <teng.wang.comment.widget.badgeview.BGABadgeRadioButton
+                    android:id="@+id/home_tab_home"
+                    style="@style/BlueMainTab"
+                    android:checked="true"
+                    android:onClick="onClick"
+                    android:drawableTop="@drawable/tab_home_page"
+                    android:paddingVertical="10dp"
+                    android:text="@string/main_radio_group_home"
+                    android:textSize="15sp"
+                    app:badge_horizontalMargin="15dp"
+                    app:badge_padding="3dp"
+                    app:badge_verticalMargin="10dp"/>
+
+
+                <teng.wang.comment.widget.badgeview.BGABadgeRadioButton
+                    android:id="@+id/home_tab_quotation"
+                    style="@style/BlueMainTab"
+                    android:onClick="onClick"
+                    android:drawableTop="@drawable/tab_home_treaty"
+                    android:paddingVertical="10dp"
+                    android:text="@string/main_radio_group_treaty"
+                    android:textSize="15sp"
+                    app:badge_horizontalMargin="15dp"
+                    app:badge_padding="3dp"
+                    app:badge_verticalMargin="10dp"/>
+
+                <teng.wang.comment.widget.badgeview.BGABadgeRadioButton
+                    android:id="@+id/home_tab_transaction"
+                    style="@style/BlueMainTab"
+                    android:drawableTop="@drawable/tab_home_order"
+                    android:onClick="onClick"
+                    android:paddingVertical="10dp"
+                    android:text="@string/main_radio_group_order"
+                    android:textSize="15sp"
+                    app:badge_horizontalMargin="15dp"
+                    app:badge_padding="3dp"
+                    app:badge_verticalMargin="10dp"/>
+
+                <teng.wang.comment.widget.badgeview.BGABadgeRadioButton
+                    android:id="@+id/home_tab_assets"
+                    style="@style/BlueMainTab"
+                    android:drawableTop="@drawable/tab_home_assets"
+                    android:onClick="onClick"
+                    android:paddingVertical="10dp"
+                    android:text="@string/main_radio_group_assets"
+                    android:textSize="15sp"
+                    app:badge_horizontalMargin="15dp"
+                    app:badge_padding="3dp"
+                    app:badge_verticalMargin="10dp"/>
+            </RadioGroup>
+
+            <View
+                android:layout_above="@+id/home_rgMainTab"
+                android:background="@color/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

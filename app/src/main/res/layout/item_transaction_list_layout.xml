@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/transaction_name_header"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@drawable/shape_yuan_app_style_blue_layout"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/transaction_list_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="@string/Loading"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/transaction_jiav"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/transaction_list_xx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/Loading"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_10" />
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="@dimen/dp_10"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/app_default" />
+
+                <TextView
+                    android:id="@+id/transaction_list_xxx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/Loading"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transaction_list_numb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/Loading"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transaction_fb_buy_item_unit_price_text"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transaction_list_quota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/Loading"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/transaction_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loading"
+                android:textColor="@color/app_style_blue"
+                android:textSize="@dimen/sp_13" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:id="@+id/transaction_list_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/transaction_buy_bankcard"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/transaction_list_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/transaction_buy_alipay"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/transaction_list_weix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/ic_wecatpay"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transaction_list_buy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/transaction_fb_buy_item_button_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:background="@color/line_color" />
+
+
+</LinearLayout>

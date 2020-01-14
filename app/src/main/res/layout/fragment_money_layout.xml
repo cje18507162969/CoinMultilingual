@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_new_head_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <teng.wang.comment.widget.VpSwipeRefreshLayout
+                android:id="@+id/mSwipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--android:background="@mipmap/index_banner"-->
+                <!--app:banner_default_image="@mipmap/index_banner"-->
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp_60">
+
+                        <www.linwg.org.lib.LCardView
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:layout_marginRight="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:topShadowHeight="@dimen/dp_6"
+                            app:bottomShadowHeight="@dimen/dp_6"
+                            app:leftShadowWidth="@dimen/dp_6"
+                            app:rightShadowWidth="@dimen/dp_6"
+                            app:leftBottomCornerRadius="@dimen/dp_4"
+                            app:leftTopCornerRadius="@dimen/dp_4"
+                            app:rightBottomCornerRadius="@dimen/dp_4"
+                            app:rightTopCornerRadius="@dimen/dp_4"
+                            app:shadowColor="@color/app_style_blue_min"
+                            app:shadowStartAlpha="80">
+
+                            <LinearLayout
+                                android:id="@+id/fragment_money_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_round_white_bg"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/money_exchange"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/dp_10">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_exchange" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_6"
+                                        android:text="@string/mbr_exchange"
+                                        android:textColor="@color/color_333333" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/money_transfer"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/dp_10">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_transferaccounts" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_6"
+                                        android:text="@string/mbr_transfer_accounts"
+                                        android:textColor="@color/color_333333" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </www.linwg.org.lib.LCardView>
+
+                        <www.linwg.org.lib.LCardView
+                            android:id="@+id/time_layout"
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:layout_marginRight="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:topShadowHeight="@dimen/dp_6"
+                            app:bottomShadowHeight="@dimen/dp_6"
+                            app:leftShadowWidth="@dimen/dp_6"
+                            app:rightShadowWidth="@dimen/dp_6"
+                            app:leftBottomCornerRadius="@dimen/dp_4"
+                            app:leftTopCornerRadius="@dimen/dp_4"
+                            app:rightBottomCornerRadius="@dimen/dp_4"
+                            app:rightTopCornerRadius="@dimen/dp_4"
+                            app:shadowColor="@color/app_style_blue_min"
+                            app:shadowStartAlpha="80">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/dp_10"
+                                android:paddingBottom="@dimen/dp_10">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:src="@drawable/pi_givenotice" />
+
+                                <!--<com.aic.shop.wight.marqueeText-->
+                                    <!--android:id="@+id/marquee_textview"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="20dp"-->
+                                    <!--android:layout_marginRight="20dp"-->
+                                    <!--android:ellipsize="marquee"-->
+                                    <!--android:focusable="true"-->
+                                    <!--android:focusableInTouchMode="true"-->
+                                    <!--android:singleLine="true"-->
+                                    <!--android:text="就算对方角度来看积分卡撒娇福克斯的缴费基数大幅减少贷款房价跌幅扩大解放打算开发建设的方式登记方式的开发建设贷款的司法鉴定收费的"-->
+                                    <!--android:textColor="#000000"-->
+                                    <!--android:textSize="14sp" />-->
+
+                                <!--<com.aic.shop.wight.ScrollTextView-->
+                                    <!--android:id="@+id/scrollTextView1"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:maxLines="1"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:layout_marginLeft="@dimen/dp_20"-->
+                                    <!--android:layout_marginRight="@dimen/dp_10"-->
+                                    <!--android:textColor="@color/color_333333"-->
+                                    <!--android:textSize="@dimen/sp_14" />-->
+
+                                <com.coin.market.wight.MarqueeText
+                                    android:id="@+id/scrollTextView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:marqueeRepeatLimit="-1"
+                                    android:focusableInTouchMode="true"
+                                    android:singleLine="true"
+                                    android:text="@string/Loading"
+                                    android:textColor="@color/color_333333"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+                        </www.linwg.org.lib.LCardView>
+
+                        <www.linwg.org.lib.LCardView
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:layout_marginRight="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:topShadowHeight="@dimen/dp_6"
+                            app:bottomShadowHeight="@dimen/dp_6"
+                            app:leftShadowWidth="@dimen/dp_6"
+                            app:rightShadowWidth="@dimen/dp_6"
+                            app:leftBottomCornerRadius="@dimen/dp_4"
+                            app:leftTopCornerRadius="@dimen/dp_4"
+                            app:rightBottomCornerRadius="@dimen/dp_4"
+                            app:rightTopCornerRadius="@dimen/dp_4"
+                            app:shadowColor="@color/app_style_blue_min"
+                            app:shadowStartAlpha="80">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_round_white_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/dp_10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="财富权限"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/sp_18" />
+
+                                        <View
+                                            android:layout_width="@dimen/dp_2"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dp_6"
+                                            android:background="@color/color_999999" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="优享福利"
+                                            android:textColor="@color/color_999999"
+                                            android:textSize="@dimen/sp_14" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/money_permission"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:layout_marginBottom="@dimen/dp_10"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <android.support.v7.widget.RecyclerView
+                                            android:id="@+id/money_button_recycler"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </www.linwg.org.lib.LCardView>
+
+                        <www.linwg.org.lib.LCardView
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:layout_marginRight="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:topShadowHeight="@dimen/dp_6"
+                            app:bottomShadowHeight="@dimen/dp_6"
+                            app:leftShadowWidth="@dimen/dp_6"
+                            app:rightShadowWidth="@dimen/dp_6"
+                            app:leftBottomCornerRadius="@dimen/dp_4"
+                            app:leftTopCornerRadius="@dimen/dp_4"
+                            app:rightBottomCornerRadius="@dimen/dp_4"
+                            app:rightTopCornerRadius="@dimen/dp_4"
+                            app:shadowColor="@color/app_style_blue_min"
+                            app:shadowStartAlpha="80">
+
+                            <RelativeLayout
+                                android:id="@+id/money_info_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/dp_10"
+                                android:paddingBottom="@dimen/dp_10">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:src="@drawable/pi_message" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/dp_10"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/money_info"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/dp_6"
+                                        android:text="@string/Loading"
+                                        android:textColor="@color/dice_red"
+                                        android:textSize="@dimen/sp_14" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/arrow_right" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                        </www.linwg.org.lib.LCardView>
+
+                        <www.linwg.org.lib.LCardView
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:layout_marginRight="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:topShadowHeight="@dimen/dp_6"
+                            app:bottomShadowHeight="@dimen/dp_6"
+                            app:leftShadowWidth="@dimen/dp_6"
+                            app:rightShadowWidth="@dimen/dp_6"
+                            app:leftBottomCornerRadius="@dimen/dp_4"
+                            app:leftTopCornerRadius="@dimen/dp_4"
+                            app:rightBottomCornerRadius="@dimen/dp_4"
+                            app:rightTopCornerRadius="@dimen/dp_4"
+                            app:shadowColor="@color/app_style_blue_min"
+                            app:shadowStartAlpha="80">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/money_order"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/dp_16">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="我的订单"
+                                            android:textColor="@color/color_333333"
+                                            android:textSize="@dimen/sp_16" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="实时查阅订单"
+                                            android:textColor="@color/color_999999" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_10"
+                                        android:src="@drawable/pi_list" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="@dimen/dp_1"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:layout_marginBottom="@dimen/dp_10"
+                                    android:background="@color/app_default" />
+
+                                <LinearLayout
+                                    android:id="@+id/money_details"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/dp_16">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="流水明细"
+                                            android:textColor="@color/color_333333"
+                                            android:textSize="@dimen/sp_16" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="实时查阅明细"
+                                            android:textColor="@color/color_999999" />
+                                    </LinearLayout>
+
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_10"
+                                        android:src="@drawable/pi_list" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </www.linwg.org.lib.LCardView>
+
+                    </LinearLayout>
+                </ScrollView>
+            </teng.wang.comment.widget.VpSwipeRefreshLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

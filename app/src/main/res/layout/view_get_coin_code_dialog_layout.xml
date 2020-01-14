@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_white_top_round_layout"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/black"
+                android:text="@string/mine_security_verification_title_text"/>
+
+            <TextView
+                android:id="@+id/edit_password_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_999999"
+                android:text="@string/cancel"/>
+
+
+        </LinearLayout>
+
+    <View
+        android:background="@color/app_default"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/black"
+            android:text="@string/Loading"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_password_edit"
+                android:background="@null"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:hint="@string/tv_code_input"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <teng.wang.comment.utils.TimerButton
+                android:id="@+id/mTimeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_marginRight="@dimen/dp_4"
+                android:gravity="center"
+                android:padding="@dimen/dp_4"
+                android:text="@string/tv_send"
+                android:textColor="@color/app_style_blue"
+                android:textSize="@dimen/sp_16"
+                app:afterText="@string/tv_resend"
+                app:ms="60000" />
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_password_confirm_button"
+        android:layout_margin="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:enabled="false"
+        android:background="@drawable/shape_blue_button_layout"
+        android:alpha="0.4"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_18" />
+
+</LinearLayout>

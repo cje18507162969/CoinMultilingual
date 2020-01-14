@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dice_green"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_160"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                       <com.coin.market.view.DiceAddView
+                            android:id="@+id/min_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_0"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dice_popular_min"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dice_odds_1"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_14" />
+                            </LinearLayout>
+
+                        </com.coin.market.view.DiceAddView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:background="@color/color_shopMain" />
+
+                        <com.coin.market.view.DiceAddView
+                            android:id="@+id/single_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_0"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="单"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dice_odds_1"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_14" />
+
+                            </LinearLayout>
+                        </com.coin.market.view.DiceAddView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_shopMain" />
+
+                    <com.coin.market.view.DiceAddView
+                        android:id="@+id/dice_all_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_20"
+                                android:src="@drawable/quantou" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dice_all_kill"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_16" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="28：1"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_14" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </com.coin.market.view.DiceAddView>
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_shopMain" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.coin.market.view.DiceAddView
+                            android:id="@+id/max_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_0"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="大"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dice_popular_max"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dice_odds_1"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_14" />
+
+                            </LinearLayout>
+                        </com.coin.market.view.DiceAddView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:background="@color/color_shopMain" />
+
+                        <com.coin.market.view.DiceAddView
+                            android:id="@+id/double_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_0"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="双"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dice_odds_1"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_14" />
+
+                            </LinearLayout>
+                        </com.coin.market.view.DiceAddView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_shopMain" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/popular_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/popular_ll"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</layout>

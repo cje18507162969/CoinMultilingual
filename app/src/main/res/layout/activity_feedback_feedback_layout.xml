@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout"/>
+
+        <View
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/feedback_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</layout>

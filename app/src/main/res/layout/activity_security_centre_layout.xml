@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/base_head_layout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_999999"
+                        android:text="@string/mine_security_centre_security_lv_text"/>
+
+                    <TextView
+                        android:id="@+id/danger_text"
+                        android:layout_marginLeft="@dimen/dp_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_home_coin_text_color_red"
+                        android:text="@string/mine_security_centre_low_text"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/security_length_line"
+                        android:orientation="vertical"
+                        android:background="@color/app_default"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_3"/>
+
+                    <LinearLayout
+                        android:id="@+id/security_length"
+                        android:orientation="vertical"
+                        android:background="@color/app_home_coin_text_color_red"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_3"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mine_security_centre_tips_text"
+                    android:textColor="@color/app_home_coin_text_color_red"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/security_centre_phone_button"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_phone"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <ImageView
+                        android:id="@+id/security_centre_phone_img"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_prompt"/>
+
+                    <TextView
+                        android:id="@+id/security_centre_phone_text"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_security_centre_off_bind"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/color_999999"/>
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/color_F5F5F5" />
+
+                <LinearLayout
+                    android:id="@+id/security_centre_email_button"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_security_centre_emll"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <ImageView
+                        android:id="@+id/security_centre_email_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_prompt"/>
+
+                    <TextView
+                        android:id="@+id/security_centre_email_text"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_security_centre_no_bind"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_coin_text_color_red"/>
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/color_F5F5F5"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/security_centre_google_button"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_security_centre_google"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <ImageView
+                        android:id="@+id/security_centre_google_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_prompt"/>
+
+                    <TextView
+                        android:id="@+id/security_centre_google_text"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_security_centre_no_bind"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_coin_text_color_red"/>
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/color_F5F5F5"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/line_color">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_security_centre_more"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12"
+                        android:textColor="@color/color_999999"
+                        android:paddingBottom="@dimen/dp_8"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dp_14"
+                        android:layout_marginBottom="@dimen/dp_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/mine_security_centre_pass"
+                            android:textSize="@dimen/sp_12"
+                            android:textColor="@color/app_home_text" />
+
+                        <ImageView
+                            android:id="@+id/security_gesture_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/mine_switchoff"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/color_F5F5F5"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_security_centre_fingerprint_login"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <ImageView
+                        android:id="@+id/security_fingerprint_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_switchoff"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/color_F5F5F5"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/security_centre_pay_button"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_payment_password"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/app_home_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_setting"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/color_999999" />
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mine_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/color_F5F5F5" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

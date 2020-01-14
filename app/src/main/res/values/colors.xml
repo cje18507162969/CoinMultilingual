@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#eb2127</color>
+    <color name="white">#ffffff</color>
+
+
+    <color name="text_code">#333333</color>
+
+    <!--签到字体颜色-->
+    <color name="text_red1">#ff7547</color>
+
+    <!--签到字体颜色-->
+    <color name="text_red2">#ff6a66</color>
+
+</resources>

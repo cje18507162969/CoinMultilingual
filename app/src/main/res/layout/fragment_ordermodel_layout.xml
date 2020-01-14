@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/order_swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePreviewInEditMode="false">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <include
+                    android:id="@+id/recycler_empty"
+                    layout="@layout/comment_view_seat_layout"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:id="@+id/classics_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    </LinearLayout>
+</layout>
